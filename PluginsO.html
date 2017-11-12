@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Plugins</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent:<a href="Settings.html"><!---->Param&egrave;trages</a></td><td><a href="AideIndex.html">Table des matières</a></td><td>Suivant: <a href="CommandLine.html">Ligne de commande</a></td>
+</tr></table>
+
+    <h1>&nbsp;Plugins </h1>
+    <p>&nbsp;<b>Notepad++</b> est extensible grâce aux <i>plugins</i>. &nbsp;Les plugins sont de grands ou petits ajouts à <b>Notepad++</b>
+        pour améliorer ses fonctionnalités. <b>Notepad++</b> est livré avec quelques plugins (si vous utilisez l'installateur,
+        vous pourrez choisir ceux à ajouter), mais vous pouvez toujours ajouter les vôtres ou en supprimer certains. Les plugins sont situés
+        dans le répertoire principal&nbsp; d'installation de <b>Notepad++</b>. Les plugins sont des fichiers DLL et il suffit
+        de les retirer ou de les ajouter pour qu'ils soient chargés ou non.
+    </p>
+    <p>&nbsp;Lorsque <b>Notepad++</b> démarre, il regarde dans son dossier de configuration les plugins et charge toutes les dll qu'il trouve.
+        Plus tard, vous pouvez ajouter des plugins en utilisant <span class="menu_item">Paramètres -&gt; Importer - Importer plugins</span>.
+        Faites attention et assurez-vous que votre version de <b>Notepad++</b> est à jour pour ajouter de nouveaux plugins et que
+        le plugin est compatible avec <b>Notepad++</b>: certains très anciens plugins ne fonctionnent plus avec les nouvelles versions 
+        de <b>Notepad++</b>, il appartient au développeur du plugin de le mettre à jour ou non.
+    </p>
+    <p> &nbsp;Actuellement, <b>Notepad++</b>  ne se trouve que en version Unicode. Il y a eu cohabitation entre des versions ANSI et Unicode, et seule la première existait à l'origine.
+ Le plugin doit correspondre à cette version, sinon il ne fonctionnera pas (<b>Notepad++</b> vous avertit à ce sujet):. Les plugins
+        peuvent se trouver n'importe où sur Internet, mais beaucoup figurent dans le projet 
+        <a target="_blank" class="extlink" href="http://sourceforge.net/projects/npp-plugins/">Notepad++ Plugins</a> sur sourceForge.net. 
+        Il y a même un plugin, appelé Plugin Manager, qui gère les détails d'installation et de version de vos plugins pour vous.
+<p>
+Si vous souhaitez installer les plugins standard, voici ceux qui sont fournis:
+<ul><li>DSpellCheck : signale les éventuelles fautes de frappe et suggère des corrections
+</li><li>NppFTP : intègre à Notepad++ la gestion de fichiers distants via FTP
+</li><li>NppExport : exporte es fichiers RTF ou HTML à partir du document actif, avec sa coloration syntaxique
+</li><li>Plugin Manager : automatise l'installation et la mise à jour de la plupart des plugins. <a class="extlink" href="http://sourceforge.net/p/notepad-plus/discussion/331754/thread/b5f1962d/">Plugin Central</a> en fournit une liste complète.
+</li><li>Converter : conversion de chaînes de caractères entre ASCII, HEX, décimal et octal
+</li><li>Mime Tool : encodage et décodage pour base64, quoted printable, URL et SAML
+</li></ul>
+A noter que n'importe lequel des plugins "officiels" peut être remplacé ou retiré, avec Plugin Manager ou manuellement.
+    </p>
+    <p> &nbsp;Si un plugin fonctionne&nbsp; mal, <b>Notepad++</b> va le décharger de façon à ce que l'erreur ne se propage pas,
+        évitant ainsi toute perte de données. &nbsp;Dans un tel cas, vous recevrez des informations sur le plugin en anomalie.
+        Il faut faire connaître ces informations sur le forum 
+        <b>Plugin de développement</b> afin d'éliminer la cause du problème dès que possible. 
+    </p>
+</body>
+</html>

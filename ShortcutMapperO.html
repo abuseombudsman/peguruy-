@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="Outil,gestion,raccourcis">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Outil gestion des raccourcis</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="StylerConfigurator.html">Configurateur de coloration syntaxique</a></td><td><a href="Settings.html"><!---->Param&egrave;trages</a></td><td>&nbsp;</td>
+</tr></table>
+
+    <h1> &nbsp;Outil gestion des raccourcis</h1>
+    <p> &nbsp;Le mappeur de raccourci contrôle les raccourcis clavier assignés aux commandes des menus et l'outil Scintilla. 
+        Appuyert sur un tel raccourci va exécuter la commande. Les raccourcis du menu sont uniques, ce qui signifie qu'un élément 
+        de menu ne peut avoir qu'un seul raccourci (vous pouvez saisir des doublons, mais un seul est actif, soyez donc prudent 
+        avec les conflits). Les raccourcis Scintilla ont un mappage un-vers-plusieurs possible, ce qui signifie une commande Scintilla peut être 
+        déclenchée par plusieurs raccourcis. </p><p>
+        Les raccourcis sont indiqués dans une liste sur deux colonnes. &nbsp;La colonne de gauche affiche le nom de la commande,
+        la colonne de droite le raccourci associé, le cas échéant. Les raccourcis étant affichés, on peut en modifier un en <span class="shortcut"> double-cliquant </span>
+        dessus, ou par <span class="shortcut">clic droit</span> et en sélectionnant <span class="menu_item">Modifier</span>.
+        S'affiche alors un dialogue avec le nom (modifiable pour les macros et commandes utilisateur) et le raccourci attribué.
+        Utilisez les cases à cocher pour contrôler ce modificateurs de touches à utiliser (notez que Scintilla ne supporte pas la
+        <span class="shortcut">touche Windows</span>, car elle n'a guère de sens sur une machine Unix / Mac) et les listes déroulantes 
+        pour choisir la touche principale. &nbsp;Choisir "Aucun" dans la liste permet de désactiver la touche de raccourci 
+        (un avertissement apparaît). Appuyer sur <span class="button">OK</span> applique les changements, <span class="button">Annuler</span>
+        les annule, tout comme la fermeture prématurée du dialogue.</p><p>
+		<p><img style="width: 593px; height: 584px;" alt="" src="Images/Screenshots/shortcut_mapper_scint.png"></p>
+        &nbsp;La boîte de dialogue pour les raccourcis Scintilla est un peu différente
+		 parce que vous pouvez ajouter des raccourcis multiples. &nbsp;En plus des
+		  contrôles normaux, vous trouverez une liste éventuellement vide avec tous les raccourcis attribués.
+		 &nbsp;Le bouton <span class="button">&nbsp;Ajouter </span>
+		  va ajouter le raccourci en cours si ce n'est [Aucunn] et s'il n'est pas déjà dans la liste.
+		&nbsp;Le bouton <span class="button">&nbsp;Supprimer&nbsp;</span> supprime le raccourci
+		sélectionné de la liste (vous pouvez les supprimer tous ainsi, sauf le dernier).</p>
+    </p>
+    <p> &nbsp;Le bouton <span class="button">&nbsp;Appliquer&nbsp;</span> va remplacer le raccourci sélectionné actuellement 
+        par les paramètres actuels. &nbsp;Pour supprimer un raccourci, si plus d'un est présent, utilisez le bouton<span class="button">Supprimer</span>.
+		 Pour supprimer un raccourci s'il est seul, il 
+        faut le mettre à "Aucun" et <span class="button">&nbsp;Appliquer&nbsp;</span> 
+    </p>
+    <p>&nbsp;Le bouton <span class="button">&nbsp;OK&nbsp;</span> enregistre les ajouts ou modifications - il en faut au moins un. Si le nouveau raccourci n'est pas valide,
+	ce bouton ne sera pas actif, pas plus que <span class="button">&nbsp;Appliquer&nbsp;</span>.
+    </p>
+    <dl>&nbsp;Les raccourcis sont divisés en plusieurs catégories : 
+        <dt>&nbsp;Menus: 
+            <dd> 
+                Ils contrôlent les principales commandes de menu par défaut. &nbsp;De plus, vous pouvez 
+                aussi modifier le raccourci pour basculer entre les documents, mais ce n'est pas recommandé (il y a encore des problèmes avec 
+                cette option&nbsp; si vous utilisez une autre séquence de touche &quot;Ctrl enfoncée&quot;).
+            </dd>
+        </dt> 
+        <dt> &nbsp;Macros: 
+            <dd> Raccourcis pour enregistrer et sauvegarder les macros enregistrées, et pour les rejouer. &nbsp;Vous pouvez modifier le nom de la macro. &nbsp;Vous pouvez également supprimer des macros à partir d'ici par <span class="shortcut">
+                clic droit</span>  sur la macro ou en sélectionnant <span class="menu_item">Supprimer</span>.
+            </dd>
+        </dt>
+        <dt> &nbsp;Commandes utilisateur :
+            <dd>Raccourcis pour les commandes enregistrées. &nbsp;Vous pouvez modifier le nom de la commande.&nbsp;Vous pouvez également 
+                Supprimer des commandes à partir d'ici par <span class="shortcut">
+                clic droit</span>  sur la commande et en sélectionnant <span class="menu_item">Supprimer</span>.
+            </dd>
+        </dt>
+        <dt> &nbsp;Commandes des plugins:
+            <dd> &nbsp;Raccourcis pour les plugins.&nbsp;Par défaut, un plugin peut opter pour une combinaison de raccourcis, mais vous pouvez ajouter/remplacer&nbsp; 
+            manuellement ici. &nbsp;Voir aussi <a href="Plugins.html">Plugins</a> 
+            </dd>
+        </dt>
+        <dt>&nbsp;Commandes Scintilla:
+            <dd>&nbsp;Raccourcis pour Scintilla. &nbsp;Seul le raccourci primaire est affiché dans la liste, mais lors de l'édition de la
+            commande tous seront listés.
+            </dd>
+        </dt>
+    </dl>
+	Le gestionnaire propose également des boutons <span class="button">Supprimer</span> et 
+	<span class="button">Modifier</span> pour supprimer ou modifier le raccourci sélectionné, exactement dans les mêmes conditions.
+</body>
+</html>

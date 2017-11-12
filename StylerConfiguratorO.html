@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><!--<base href=""/><base target="_top"/>-->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="KEYWORDS" content="">
+  <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+<title>Configurateur de Style</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Preferences.html">Pr&eacute;f&eacute;rences</a></td><td><a href="Settings.html"><!---->Param&egrave;trages</a></td><td>Suivant: <a href="ShortcutMapper.html">Mappeur de raccourci </a></td>
+</tr></table>
+
+    <h1>&nbsp;Configurateur de coloration Syntaxique </h1>
+    <p> &nbsp;Le configurateur de coloration syntaxique est principalement utilisé pour contrôler l'apparence du texte dans <b>Notepad++</b>,
+	 mais il vous permet également de modifier certains des autres aspects qui ont une couleur configurable 
+        par l'utilisateur. <br><img src="./Images/Screenshots/styler_config.png">
+    </p>
+    <ul>&nbsp;Le configurateur de coloration syntaxique a deux listes. &nbsp;La liste de gauche
+        <span class="label">&nbsp;Langage </span>&nbsp;contient tous les langages déjà 
+        connus, ainsi que d'autres articles possédant&nbsp; des paramètres de couleur: 
+        <li> &nbsp;Global Styles: contrôle les couleurs d'interface utilisateur. </li>
+        <li> &nbsp;Résultats: Le texte de la 
+        <a href="Searchwindow.html">fenêtre de résultats de recherche</a> </li>
+        <li> &nbsp;DOS) style: colorier le texte pour l'afficher comme dans une fenêtre de shell command.com / cmd.exe. </li>
+    </ul>
+    <p> &nbsp;La liste sur la droite <span class="label">&nbsp;Style </span>&nbsp;comporte tous les styles configurables pour le langage choisi.</p>
+    <dl>&nbsp;Pour la plupart des langages, le rôle des éléments de cette liste devrait être évident. Ne figurent donc ici 
+	que les éléments de configuration globale et quelques exceptions connues.
+    <dt>&nbsp;Validation : 
+        <ul>
+        <li>&nbsp;<span class="button"> Enregistrer &amp; fermer </span>: Conservez tous les renseignements style et fermer la boîte de dialogue.</li>
+        <li>&nbsp;<span class="button"> Annuler </span>: annuler toutes les modifications apportées et fermer la boîte de dialogue. Même 
+            action que lorsqu'on ferme la boîte de dialogue.
+        </li>
+        </ul>
+    </dt>
+    <dt>&nbsp;Configuration du dialogue: 
+        <dd> &nbsp;<span class="checkbox"> Transparence </span>&nbsp;permettra de rendre la boite de dialogue translucide. 
+            Le curseur contrôle le niveau de transparence. &nbsp;Notez que la transparence n'est disponible qu'à partir de Windows 2000.
+        </dd>
+    </dt>
+    <dt>&nbsp;Thèmes : 
+        <dd>&nbsp;Un thème de style est une collection complète des propriétés de style (voir ci-dessous), pour toutes les langages 
+            et les paramètres globaux. &nbsp;À un moment donné, un thème est actif, et vous pouvez le modifier à tout moment en 
+            utilisant la liste déroulante en haut de la boîte de dialogue. &nbsp;La liste est lue au démarrage à partir du 
+            sous-dossier des thèmes, mais vous pouvez en ajouter un peu plus tard en utilisant 
+            <span class="Menu">Paramétrage -&gt; Importer -&gt; Importer fichier(s) de thème</span>.
+        </dd>
+    </dt>
+    <dt> &nbsp;Les propriétés de style: 
+        <dd> &nbsp;Tous les styles ont des propriétés qui leur sont assignées. &nbsp;Chaque style a des propriétés que les
+            autres n'ont pas, comme une couleur de fond. &nbsp;Si une propriété n'est pas disponible, elle est tout simplement grisée.
+        </dd>
+    </dt>
+    <dt> &nbsp;Couleurs: 
+        <ul>&nbsp;Cliquer sur la case de couleur affiche un menu popup avec les principales couleurs par défaut.
+            En cliquant vous changer la couleur. &nbsp;Cliquez sur <span class="button">Autres couleurs ...</span> pour spécifier
+            manuellement une autre couleur. &nbsp;Chaque case de couleur est &quot;cliquable droite&quot;: un clic droit impose ou supprime l'usage de la couleur dy style par défaut.
+			Des hachures apparaissent sur la case pour signaler l'usage de la couleur par défaut. 
+            <li>&nbsp;<span class="label">Couleur de premier plan:</span> ce sont&nbsp; les couleurs utilisées
+                pour le texte (couleur des caractères).
+            </li>
+            <li> &nbsp;<span class="label">La couleur de fond:</span>&nbsp; ce sont les couleurs de l'arrière-plan du texte</li>
+        </ul>
+    </dt>
+	<dt><a name="Fonts"></a>Polices :
+        <ul>
+        <li>&nbsp;<span class="label">Nom de la police:</span> La police à utiliser lors de l'affichage du texte. 
+            Laissez ce champ vide pour utiliser la valeur par défaut.
+        </li>
+        <li>&nbsp;<span class="label">Taille de police:</span> Taille de la police (en points) à utiliser lors de l'affichage
+            du texte. &nbsp;Laissez ce champ vide pour utiliser la valeur par défaut. 
+		</li><li> &nbsp;<span class="checkbox"> Gras </span>: 
+            si vous souhaitez mettre le texte en gras.
+        </li>
+        <li> &nbsp;<span class="checkbox"> Italique </span>&nbsp;: si vous souhaitez mettre le texte en italique.</li>
+        <li> &nbsp;<span class="checkbox"> Souligné </span>:si vous souhaitez souligner le texte .</li>
+        </ul>
+    </dt>
+    </dl>
+    <ul>Si un langage ordinaire est sélectionné, deux contrôles d'édition sont visibles: 
+        <li> &nbsp;<span class="label"> Ext. par défaut </span>. Extensions de fichier par défaut associée à ce langage.
+            Si un fichier est ouvert avec cette extension, <b>Notepad++</b> changera le langage. 
+        </li>
+        <li> &nbsp;<span class="label"> Ext. utilisateur </span>&nbsp;définit la liste des d'extensions utilisateur éventuelles (séparées par un espace).  
+		<b>Notepad++</b> traite les fichiers possédant ces extensions comme s'ils portaint l'extension par défaut.
+        </li>
+    </ul>
+    <ul> &nbsp;Quand un style est sélectionné et que lui sont associés des mots clé spécifiques, en choisir ce style 
+        affiche deux contrôles d'édition supplémentaires: 
+        <li> &nbsp;<span class="label">mots-clé prédéfinis </span>&nbsp;Ce sont les mots clé utilisés par défaut par le langage. </li>
+        <li> &nbsp;<span class="label">mots-clé utilisateur </span>&nbsp;Vous pouvez entrer 
+            vos mots-clé personnels, séparés par un espace, afin de compléter la liste prédéfinie. Le style sera également appliqué 
+			aux mots clé de cette liste, afin de tenir compte de variantes au sein dd'un langage ou d'évolutions récentes.
+        </li>
+    </ul>
+    <h3><a name="Special_languages"></a>&nbsp;langages spéciaux: </h3>
+    <h4> &nbsp;Global Styles: (styles par défaut + styles de l'interface utilisateur) </h4>
+    <p><img src="./Images/Screenshots/styler_config_default.png"></p>
+    <dl>
+    <dt>&nbsp;Global Override 
+        <dd>&nbsp;Ce style peut surcharger un ou plusieurs éléments de tout autre style, et a quelques options 
+            spécifiques. &nbsp;Chaque case à cocher ci-dessous, détermine une option de 
+            manière gobale aux autres styles. &nbsp;Si une propriété est vide le style ne sera pas appliqué.
+            Pour gras, italique et souligné, il n'y a de désactivation globale que si  
+            ces propriétés sont activées.
+        </dd>
+    </dt>
+    <dt> &nbsp;Style par défaut 
+        <dd> &nbsp;Propriétés du style par défaut appliquables aux autres styles tant qu'ils ne les surchargent pas. 
+		Le comportement en cas de propriété vierge est indéfini.
+        </dd> 
+    </dt>
+    <dt><a name="Indent_Guideline_Style"></a>&nbsp;Indent Guidline Style
+        <dd> Couleurs à utiliser pour la ligne de niveau d'indentation. &nbsp;La ligne directrice est tracée avec des couleurs alternées, 
+            spécifiées en utilisant l'avant-plans et la couleur de fond. 
+        </dd>
+    </dt>
+    <dt><a name="Brace_Highlight_Style"></a>&nbsp;Brace highlight Style 
+        <dd>&nbsp;Pour marquer des accolades, utilisez ce style. &nbsp;Toutes les propriétés peuvent être modifiées.</dd>
+    </dt>
+    <dt> &nbsp;Bad brace color :
+        <dd>Ce style est utilisé si une accolade ouvrante n'est pas fermée ou si une accolade fermante n' a pas 
+            d'accolade ouvrante correspondante. Le symbole non apparié est dessiné avec ce style.
+        </dd>
+    </dt>
+    <dt><a name="Current_line_background_colour"></a>&nbsp;Current line background :
+        <dd>&nbsp;Contrôle de la couleur de fond de la ligne active, si ctte option est active. Valeur vide interdite. </dd>
+    </dt>
+    <dt>&nbsp;Selected text colour : 
+        <dd>&nbsp;Couleur de l'arrière-plan du texte sélectionné. &nbsp;Valeur vide interdite.</dd>
+    </dt>
+    <dt><a name="Caret_colour"></a> &nbsp;Cursor Colour :
+        <dd>&nbsp;Couleur du  curseur. Valeur vide interdite.</dd>
+    </dt>
+    <dt><a name="Edge_colour"></a> &nbsp;Edge Colour :
+        <dd>&nbsp;Couleur du bord vertical de droite. &nbsp;Valeur vide interdite.</dd>
+    </dt>
+    <dt><a name="Line_number_margin"></a> &nbsp;Line number margin :
+        <dd>&nbsp;Contrôle le style de la marge de numéros de ligne. Toutes les propriétés peuvent être ajustées. Ce contrôle affecte également 
+            la couleur de fond de la marge de signet. 
+        </dd>
+    </dt>
+    <dt><a name="Fold"></a> &nbsp;Fold :
+        <dd>&nbsp;Contrôle la couleur des indicateurs d'escamotage (pas la marge elle-même). &nbsp;Ne peut pas être réglé à des valeurs vides.</dd>
+<dt>Fold active
+</dt><dd>La couleur de premier plan pour ce style sert à tracer dans la marge 
+ la marque du bloc escamotable contenant la ligne activze. Ne fonctionne que si le style de 
+ marqueurs est Rectangles ou Cercles.</dd>
+    <dt>Fold margin : 
+        <dd>Contrôles les couleurs d'arrière-plan de la marge des plis. Les couleurs d'avant- et arrière plan forment un motif en damier 
+            à l'échelle du pixel.
+        </dd>
+    </dt>
+    <dt><a name="White_space_symbol"></a> &nbsp;White space symbol 
+        <dd>&nbsp;Contrôle la couleur de premier plan des espaces. N'est utilisée que si l'espacement fixe est activé ou tout autre 
+            style qui a des espaces soulignés. Valeur vide interdite.
+        </dd>
+    </dt>
+    <dt><a name="Smart_Highlighting"></a> &nbsp;Smart Highlighting&nbsp;:
+    <dd> Lorsque l'option est activée, ce style s'applique à toutes les occurrences du texte sélectionné.</dd>
+    </dt>
+    <dt><a name="Find_Mark_Style"></a> &nbsp;Mark style # : 
+        <dd>&nbsp;# compris entre 1 et 5. &nbsp;Ces paramètres définissent la mise en évidence utilisé en conjonction avec
+            <span class="menu_item">&nbsp;Rechercher -&gt; Naviguer (haut/bas) -&gt; style #    </span>.
+        </dd>
+    </dt>
+    <dt><a name="Find_Mark_Style"></a>&nbsp;Find Mark Style&nbsp;:
+        <dd>&nbsp;Lorsque <span class="checkbox">Marquer les lignes</span> n'est pas activée dans l'onglet <span class="label">Marquer</span> dela boîte de dialogue Rechercher,
+		 et si <span class="button">&nbsp;Rechercher tout</span> est exécuté, ce style s'applique à toutes les occurrences détectées.
+        </dd>
+    </dt>
+    <dt><a name="Incremental_highlight_all"></a>&nbsp;Incremental highlight all :
+        <dd>&nbsp;S'applique lorsque la recherche incrémentielle est en cours.</dd>
+    </dt>
+    <dt><a name="Tags_match_highlighting"></a>&nbsp;Tag match highlighting&nbsp;:
+        <dd> Lorsque l'option est activée, ce style s'applique à des paires balises qui se correspondent.</dd> 
+    </dt>
+    <dt>&nbsp;Tag attributes :
+        <dd>&nbsp;Contrôle la couleur de fond utilisée pour les attributs de balises. Valeur vide interdite.</dd>
+    </dt>
+    <dt><a name="Active_tab_focused"></a>&nbsp;Active tab focused :
+        <dd>&nbsp;Détermine la couleur de la ligne marquant l'onglet actif (si cette option est active). Valeur vide 
+            interdite.
+        </dd>
+    </dt>
+    <dt>&nbsp;Active tab unfocused :
+        <dd>&nbsp;Détermine la couleur de la ligne marquant l'onglet actif de l'autre vue (si cette option est active). Valeur vide 
+            interdite.
+        </dd>
+    </dt>
+    <dt>&nbsp;Active tab text :
+        <dd>&nbsp;Couleur de premier plan du texte d'un onglet actif. Valeur vide interdite.</dd>
+    </dt>
+    <dt> &nbsp;Inactive tabs :
+        <dd>&nbsp;Laouleur de premier plan  est celle du texte des onglets inactifs. 
+		La couleur de fond est utilisée pour le fond des onglet inactifs si <span class="checkbox">Assombrir les onglets inactifs</span> est activé.
+    </dd> 
+    </dt>
+    </dl>
+    <h4> &nbsp;Résultat de la recherche </h4>
+    <dl>&nbsp;Voici les paramètres modifiables de l'apparence des résultats de recherche affichés dans la
+        <a href="Searchwindow.html">fenêtre de résultats de recherche</a> :
+    <dt>&nbsp;Default :
+        <dd> Tout le texte dans la fenêtre auquel aucun autre style ne s'applique.</dd>
+    </dt>
+    <dt> &nbsp;Search Header :
+        <dd>&nbsp;La première ligne de la fenêtre de résultats, qui contient les statistiques de la recherche.</dd>
+    </dt> 
+    <dt>&nbsp;File Header 
+        <dd>:&nbsp;Affiche le nom du fichier et le nombre d'occurrences dans ce fichier. </dd>
+    </dt> 
+    <dt> &nbsp;Line number :
+        <dd>&nbsp;Les numéros de ligne cliquables qui mènent droit au résultat de recherche dans le fichier.</dd>
+    </dt> 
+    <dt> &nbsp;Hit Word :
+        <dd>&nbsp;Le résultat de la recherche lui-même.</dd>
+    </dt> 
+    <dt> &nbsp;Selected Line :
+        <dd>&nbsp;Tout texte sélectionné</dd> 
+    </dt> 
+    <dt>&nbsp;Current line background colour :
+        <dd>&nbsp;Couleur de fond de la ligne courante. Faites un clic droit de la couleur pour supprimer cette mise en évidence.</dd>
+    </dt> 
+    </dl>
+    <h4> &nbsp;Dos Style </h4>
+    <p>&nbsp;Le "langage" DOS utilise une police spéciale appelée MSLINEDRAW pour permettre l'usage des caractères semi-graphiques (&quot;box-art&quot;)
+	dans es fichiers utilisant un ancien encodage DOS.&nbsp;Vous ne pouvez contrôler la couleur nidu fond ni du texte. Tout le texte 
+	 (reçoit ce style.
+        Les propriétés de police sont celles du style par défaut (à l'exception du nom de la police, qui est toujours MSLINEDRAW).
+    </p>
+</body>
+</html>

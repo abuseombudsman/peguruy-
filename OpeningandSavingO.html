@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="ouvrir,enregistrer,ouverture,fermeture">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <base target="_top">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Ouvrir et Enregistrer</title>
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="FileCreation.html">Cr&eacute;er un Fichier</a></td><td><a href="FileManagement.html"><!---->Gestion des fichiers</a></td><td>Suivant: <a href="Closing.html">Fermeture</a></td>
+</tr></table>
+
+    <h1>Ouverture et enregistrement de fichiers: </h1>
+	<h2>Ouverture</h2>
+    <ul><span style="font-weight: bold;">Ouvrir...</span> est très semblable à toute autre application Windows :
+        <li> Pour ouvrir un fichier, il suffit d'aller dans <span class="menu_item">Fichier-&gt;
+            Ouvrir... ,</span> ou appuyez sur <img src="./Images/Toolbar/openFile.jpg" style="width: 16px; height: 16px;">.
+            Une boîte de dialogue apparaît et vous pouvez sélectionner un ou plusieurs fichiers qui doivent être ouverts.  Chaque
+            fichier sera ouvert dans un onglet individuel.  Si le fichier est déjà ouvert, <b>Notepad++</b> va vous montrer
+            ce fichier dans son état actuel.  Dans la boîte de dialogue, un filtre vous permettra de ne montrer que les
+            fichiers qui appartiennent à un langage donné (tels que C++ ou PHP) en fonction de l'extension.  Par défaut
+            tous les fichiers sont affichés. Si vous tenez d'ouvrir plus de 200 fichiers, Notepad++ vous en avertira, au cas où ce serait une fausse maneuvre.
+        </li>
+        <li> Une autre façon d'ouvrir un fichier est de glisser le fichier dans <b>Notepad++</b> en utilisant le curseur, sur la
+            barre de titre de l'application.  Cela peut aussi être fait avec plusieurs fichiers ou dossiers sélectionnés ensemble.
+        </li>
+        <li>De plus, <b>Notepad++</b> conserve une liste des fichiers non ouverts, et récemment fermés (dans le menu <span class="menu_item">Fichier</span>) vous permettant de 
+            les rouvrir rapidement.  Il suffit de cliquer sur le nom du fichier pour l'ouvrir (voir la section sur la <a href="Preferences.html#New_Document_Open_Save_directory">liste des fichiers
+            récents</a> pour plus de détails). Pour ouvrir tous les fichiers dans cette liste, il suffit de sélectionner 
+            <span class="menu_item">Fichier-&gt; Ouvrir tous les fichiers récents</span>. <span class="menu_item">Fichier-&gt; Nettoyer liste des fichiers récents&nbsp;</span>
+            permet de réinitialiser cette liste).  Si la liste est contenue dans un sous-menu, ces deux commandes y figurent également.
+        </li>
+        <li> Voir aussi l'option <a href="CommandLine.html">ligne de commande</a> pour voir comment ouvrir des fichiers de cette manière.</li>
+    </ul>
+	<h2>Enregistrement</h2>
+    <ul><b>L'enregistrement</b> d'un fichier peut se faire de plusieurs façons :
+        <li> Le mode par défaut est de sélectionner <span class="menu_item">Fichier-&gt; Enregistrer... </span> ou d'appuyer sur 
+            <img src="./Images/Toolbar/saveFile.jpg" style="width: 16px; height: 16px;">.  S'il s'agit d'un fichier existant, il sera remplacé 
+            par le contenu actuel.  Notez que si le fichier n'a pas été modifié, vous ne pouvez pas enregistrer le fichier, l'option n'est
+            pas accessible.
+        </li>
+        <li> Si vous souhaitez enregistrer tous les fichiers que vous avez ouverts à la fois, vous pouvez sélectionner
+            <span class="menu_item">&nbsp;Fichier-&gt; Enregistrer tout </span>ou appuyer sur 
+            <img src="./Images/Toolbar/saveAll.jpg" style="width: 16px; height: 16px;">.
+        </li>
+        <li> Si le fichier n'a qu'un nom calculé (par exemple, si vous aviez créé un nouveau fichier), ou que vous avez sélectionné
+                <span class="menu_item">&nbsp;Fichier-&gt; Enregistrer sous </span>, la boîte de dialogue d'enregistrement de fichier apparaît,
+                vous demandant le nom du fichier.  Vous pouvez ensuite choisir l'emplacement et le nom du fichier.  L'extension .txt est ajoutée 
+                si le nom du fichier n'a aucune extension. Ajoutez un point pour éviter ce comportement.
+        </li>
+        <li> Une variante utile : <span class="menu_item">&nbsp;Fichier-&gt; Enregistrer une copie</span>.  La différence avec 
+            <span class="menu_item">&nbsp;Fichier-&gt; Enregistrer sous </span> est que votre travail se poursuit sur le nouveau fichier, et
+            non pas sur le fichier origine. 
+        </li>
+        <li> Le filtre de la boîte de dialogue peut ajouter automatiquement ou modifier l'extension pour vous. L'extension
+            par défaut sera en tête de la liste du filtre.
+        </li>
+    </ul> 
+	<h2>Sauvegardes</h2>
+<p>	
+Les sauvegardes, qui sont optionnelles, prennent deux formes:
+<ul><li>A l'enregustrement d'un fichier, vous pouvez demander à Notepad++ de conserver une copie de sauvegarde.
+ Le nom de cette copie comporte optionnellement un horodatage,
+ et peut être placée dans un répertoire dédié plutôt qu'à côté du fichier enregistré.
+</li><li>Si <span class="checkbox">Sauvegardes et enregistrements de session périodiques</span> est cochée, le contenu de tous les  
+fichiers ouverts dans leur état immédiat (non enregistré), ainsi que la session les décrivant, 
+ seront sauvegardés à intervalles réguliers, de lobgueur configurable. 
+Il peut en résulter que votre fichier sur disque contienne son état enregistré le plus récent, alors qu'une copie 
+instantanée plus récente existe ailleurs, et apparaîtra dans l'éditeur à sa réouverture. 
+Ceci est particulièrement utile en cas de fermeture acidentelle du programme, 
+mais peut surprendre si vous travaillez sur le même fichier avec d'autres outils que Notepad++.
+Notepad++ ne vous avertit pas à la fermeture que des fichiers ne sont pas enrgistrés; 
+ il faut se fier aux icônes d'état sur les oglets.
+</li></ul>
+All options controlling what kind of backup is on and configuring backup are on <a href="Preferences.html#Backup">the backupp tab in the Preferences dialog box</a>
+</p>
+<h2>Other related operations</h2>
+
+    <p> Vous pouvez <span class="menu_item">&nbsp;Fichier-&gt;Recharger à partir du disque</span> un fichier si vous souhaitez soit mettre à jour la vue actuelle du fichier
+        (par exemple, si le fichier a été modifié entretemps) soit réinitialiser son contenu à ce qui est sur le disque (si vous avez modifié le fichier, mais pas
+        encore enregistré). Si le fichier a été modifié sur le disque d'une autre manière en décalage avec le contenu en mémoire, 
+        <b>Notepad++</b> va vous demander par défaut si vous souhaitez le recharger (voir <a href="Preferences.html#MISC">Préférences</a> pour plus de détails). 
+    </p>
+    <p> Enfin, vous pouvez choisir de <span style="font-weight: bold;">renommer</span> un fichier en sélectionnant 
+        <span class="menu_item">&nbsp;Fichier-&gt; Renommer </span>. Une boîte de dialogue vous demandera le nouveau nom du fichier, semblable
+        à la boîte de dialogue Enregistrer sous.  Toutefois, le fichier d'origine sera supprimé. 
+    </p>
+	
+<h2>Le gestionnaire de projets</h2>
+<p>Cet outil, sous la forme d'une fenêtre ancrable, permet l'affichage sous forme arborescente d'ensembles de fichiers, et permet d'en ouvrir un par un dans la vue principale.
+On ouvre ces fenêtres par <span class="menu_item">Affichage -> Projet -> Affichage de projet <i>n</i></span> où <i>n</i> vaut 1, 2 ou 3. Sous une racine appelée <span class="label">Workspace</span>
+ peuvent se trouver des <span class="label">projet</span>s, eux-mêmes composés de <span class="label">répertoire</span>s et <span class="label">fichier</span>s.
+ <img align="left" src="./Images/Screenshots/projectMgr.png" style="width:300px;height:400px;"/>
+</p><p>Chaque élément a un menu contextuel. Celui de l'espace de travail est également affiché via <span class="button">WorkSpace</span>, celui des autres éléments étant disponible via <span class="button">Edit</span>.
+<br><br><br><br><br>
+<h3>L'espace de travail</h3>
+Chaque espace de travail est lié à un fichier qui en décrit le contenu à la manière d'une session. Ainsi peut-on:
+<br><br><br><br>
+<ul><li>Remettre à zéro l'espace
+</li><li>Charger un fichier d'espace
+</li><li>Recharger le fichier d'espace (pour écraser des modifications indésirables)
+</li><li>Sauvegarder l'état de l'espace
+</li><li>Sauvegarder dans un autre fichier d'espace, et le rendre courant
+</li><li>Sauvegarder une copie dans un fichier d'espace (et continuer avec l'actuel)
+</li><li>Ajouter un nouveau projet
+</li></ul><p> 
+La touche <span class="shortcut">Entrée</span>, de même qu'un double clic ou clic simple sur le symbole d'escamotage s'il existe, change  
+l'état d'escamotage de l'élément.
+</p>
+<p>Au sein d'un espace de travail, tout élément peut être déplacé par glisser-déplacer, pour autant que cela ait un sens
+ - déplacer un projet à l'intériur d'un répertoire n'a pas de sens.
+ En outre, un élément peut être déplacé vers le haut ou le bas dans la catégorie qui le contient, et ce en
+ sélectionnant l'élément puis en utilisant les touches
+ <span class="shortcut">Ctrl-Haut</span> vers le haut ou <span class="shortcut">Ctrl-Bas</span> vers le bas. 
+</p>  
+<h3>Les projets</h3>
+<p>On peut renommer ou supprimer un élément via le menu contextuel, ou bien y ajouter des répertoires et des fichiers.
+Le changement de nom peut aussi se faire par clic sur l'étiquette, à la manière de l'explorateur de fichiers de Windows.
+La touche <span class="shortcut">Suppr</span> supprime aussi l'élément.
+</p><p>La commande <span class="menu_item">Ajouter des fichiers depuis un Dossier...</span> 
+ vous permet de choisir un répertoire. Ceci étant fait, tou ses fichiers sont ajoutés au projet,
+ et tous ses répertoires sont ajoutés comme répertoires du projet.
+</p><h3>Les répertoires</h3>
+<p>Les mêmes commandes sont disponibles. Un répertoire est un simple contenant, il n'est en rien lié à un répertoir de votre système de fichiers,
+ même s'is ont été ajoutés via la commande <span class="menu_item">Ajouter des fichiers depuis un Dossier...</span> .
+</p><h3>Les fichiers</h3>
+Un fichier de l'espace de travail référence le fichier correspondant sur votre ordinateur.
+Les mêmes commandes sont disponibles, hormis
+ <span class="menu_item">Ajouter un répertoire</span>; les fichirs n'ont pas de symbole d'escamotage. 
+On peut en revanche 
+changer le chemin complet du fichier via <span class="menu_item">Modifier le chemin du fichier</span>
+ - cela permet par exemple de basculer d'une version à l'autre quand elles sont dans des répertoires
+ différents sur votre ordinateur. La touche <span class="shortcut">Entrée</span> ou un double clic ouvre le fichier dans la vue active.
+ </p><p>Si un nom de fichier ne correspond pas à un fichier réel, son icône est surchargée pour signaler ce fait,
+  et on ne peut pas l'ouvrir.
+</p></body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><!--<base href=""/><base target="_top"/>-->
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="KEYWORDS" content="Macros">
+	<meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+	<title>Macros</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent:<a href="Display.html"><!---->Affichage</a></td><td><a href="AideIndex.html">Table des matières</a></td><td>Suivant: <a href="Commands.html">Lancer une commande Externe</a></td>
+</tr></table>
+
+	<h1>&nbsp;Macros</h1>
+	<p> &nbsp;<b>Notepad++</b> est capable d'enregistrer certaines des actions que vous effectuez lors de l'édition d'un document, et 
+		de les rejouer plus tard pour éviter d'avoir à répéter ces séquences d'actions. &nbsp;C'est ce qu'on appelle une <i>macro</i> et peut 
+		faire économiser beaucoup de temps. &nbsp;Une macro peut être jouée une fois ou plusieurs fois, même aussi longtemps que nécessaire pour parcourir un document entier. 
+		&nbsp;Vous pouvez les enregistrer pour une utilisation ultérieure et 
+		leurs assigner des touches raccourci pour un accès rapide (voir <a href="ShortcutMapper.Html">
+		Raccourcis Claviers...</a> ). Les macros sont sensibles à la position actuelle du curseur et s'appuient dessus.
+	</p>
+	<p>&nbsp;Pour <b>enregistrer</b> une macro, sélectionnez <span class="menu_item">&nbsp;Macro -&gt; Démarrer l'enregistrement </span>
+	    &nbsp;ou appuyez sur le bouton <img style="width: 16px; height: 16px;" alt="" src="./Images/Toolbar/startRecord.jpg"> de la barre d'outils. 
+	    <b>Notepad++</b> va maintenant enregistrer les changements que vous apportez à un document et certaines autres actions que vous effectuez. 
+	</p>
+	<p> &nbsp;Pour <b>arrêter l'enregistrement</b>, sélectionnez <span class="menu_item">&nbsp;Macro -&gt; Arrêter l'enregistrement </span>
+	    &nbsp;ou sélectionnez le <img style="width: 16px; height: 16px;" alt="" src="./Images/Toolbar/stopRecord.jpg">&nbsp;bouton sur la barre 
+	    d'outils. Contrairement à la plupart des commandes, vous pouvez obtenir cet efet avec une combinaison spéciale de
+	    raccourci qui n'est pas répertoriée séparément dans le menu, mais uniquement dans le <a href="ShortcutMapper.Html">Raccourcis Claviers...</a> 
+		(voir <a href="Preferences.Html">Paramètres</a>) - par défaut, <span class="shortcut">Ctrl-Shift-R</span>.
+	</p>
+	<p> &nbsp;Après l'arrêt de l'enregistrement, la macro sera placée dans une zone temporaire.
+		&nbsp;Si vous n'avez pas effectué toutes les actions, ce tampon est effacé lors d'un nouvel enregistrement. Par contre, 
+		&nbsp;si vous commencez à enregistrer une autre macro sans sauvegarder votre travail plus tôt, il sera perdu. 
+	</p>
+	</p>&nbsp;Pour <b>lire</b> la macro dans la mémoire tampon, sélectionnez <span class="menu_item">&nbsp;macro-&gt; Lecture </span>&nbsp;ou appuyez
+	    sur le bouton <img style="width: 16px; height: 16px;" alt="" src="./Images/Toolbar/playRecord.jpg">. Ceci effectuera la macro une fois à la 
+	    position actuelle.<br><img style="width: 276px; height: 188px;" alt="" src="./Images/Screenshots/save_shortcut.png"><br>
+		&nbsp;Pour <span style="font-weight: bold;">enregistrer</span> la macro de la mémoire tampon, sélectionnez 
+		<span class="menu_item"> &nbsp;macro -&gt; Enregistrer macro en cours </span>&nbsp; ou appuyez sur le bouton 
+		<img style="width: 16px; height: 16px;" alt="" src="./Images/Toolbar/saveRecord.jpg">. Une boîte de dialogue apparaîtra et vous demandera un
+		nom de la macro et la combinaison de touches associée. Ce raccourci peut ensuite être changé (et supprimé) en utilisant l'outil&nbsp;
+		<a href="ShortcutMapper.html"> raccourcis clavier...</a>. Une fois enregistrée, la macro sera disponible dans le menu <span class="menu_item">Macro</span>
+		 ou la liste des Macros.
+		<br><img style="width: 258px; height: 201px;" alt="" src="./Images/Screenshots/macro_multiple.png"><br>
+		&nbsp;Pour <b>Exécuter</b> la macro en cours dans le tampon ou une macro précédemment sauvegardée une fois ou <b>plusieurs fois</b>, sélectionnez 
+		<span class="menu_item">&nbsp;Macro -&gt; Exécuter une macro plusieurs fois ...</span> ou appuyez sur le bouton 
+		<img style="width: 16px; height: 16px;" alt="" src="./Images/Toolbar/playRecord_m.jpg">. Une boîte de dialogue s'affichera vous permettant
+		de choisir la macro (macro en mémoire ou toute macro enregistrée) et combien de fois. Vous pouvez également opter pour exécuter la macro 
+		jusqu'à ce que le curseur atteigne la fin du fichier actuel (à partir de sa position actuelle). Notez que si aucune macro n'est disponible,
+		cette boîte de dialogue est inaccessible. 
+    </p>
+</body>
+</html>

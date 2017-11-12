@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="langue,utilisateur">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>langues définies par l'utilisateur</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Pr�c�dent: <a href="Built-inLanguages.html">Travailler avec les langages</a></td><td><a href="Languages.html"><!---->Langages</a></td><td>Suivant: <a href="ExternalLexers.html">Dictionnaire lexical externe</a></td>
+</tr></table>
+
+    <h1> &nbsp;Langages définis par l'utilisateur </h1>
+    <p>&nbsp;Cette fonctionnalité vous permet d'ajouter votre propre langage à 
+        <b>Notepad++</b>. Les pages de&nbsp; NpWiki++ sur
+        <a class="extlink" href="http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User_Defined_Language_Files">les fichiers 
+        de définition de langage utilisateur</a> contiennent des listes de tous les langages connus 
+        et permet de partager de nouvelles contributions sous forme de fichiers.
+    </p>
+    <p>&nbsp;<b>Notepad++</b> est initialement paramétré par le langage principal défini par l'utilisateur. Vous pouvez
+        l'utiliser pour tester vos paramètres et puis plus tard créer un nouveau langage sur cette base. Il appartient à l'utilisateur
+		de sauvegarder le langege utilisateur par défaut modifié: ses paramètres ne seront pas sauvegardés à la fermeture. 
+        &quot;Les <b>langage utilisateur</b>&quot; sont disponibles en bas du menu <span class="menu_item">langages</span>.
+    </p>
+    <p>&nbsp;Pour en définir un, vous avez besoin du dialogue Définition de langage utilisateur, qui peut être consulté en sélectionnant
+        <span class="menu_item">&nbsp;<b>Langage </b>-&gt; <b>langage utilisateur ...</b></span> ou en appuyant sur le bouton 
+        <img style="width: 16px; height: 16px;" alt="" src="./Images/Toolbar/showPannel.jpg"> &nbsp;.
+    </p>
+    <p> &nbsp;La boîte de dialogue peut 
+        être flottante à l'ouverture comme tout dialogue standard, ou être inséré dans 
+        la fenêtre principale de &nbsp;<b>Notepad++</b> . &nbsp;Il suffit de cliquer <span class="button">&nbsp;Dock / UnDock </span>
+		&nbsp;pour le faire. &nbsp;Si la boîte de dialogue est flottante, vous pouvez contrôler sa transparence. &nbsp;Cochez
+        la case de transparence puis contrôlez la quantité en utilisant le curseur. Notez que la transparence n'est
+        disponible qu'à partir de Windows 2000.
+    </p>
+    <p> &nbsp;La boîte de dialogue affiche une liste déroulante de langages utilisateur définis pour le moment. Vous pouvez modifier 
+        leurs paramètres, ils seront automatiquement sauvegardées. &nbsp;Pour créer un langage utilisateur fondé sur le langage par défaut,
+        cliquez sur le bouton <span class="button">&nbsp;Créer un nouveau ...,</span> une boîte de dialogue apparaîtra et vous en demandera le nom.
+        Pour créer un nouveau langage utilisateur sur la base du langue actuel, cliquez sur 
+        <span class="button">&nbsp;Enregistrer sous ...</span> et entrez le nouveau nom. &nbsp;Si vous avez sélectionné un langage utilisateur,
+        vous pouvez, si nécessaire, cliquer sur le bouton <span class="button"> &nbsp;Renommer </span>&nbsp;pour entrer un nouveau nom. Le bouton
+        <span class="button">&nbsp;Supprimer </span> &nbsp;permet de supprimer le langage actuel, qui ne doit pas être celui par défaut.</p>
+    <p> &nbsp;Si vous voulez 
+        que le langage utilisateur ignore la casse des mots-clef,
+         activez la case à cocher  <span class="checkbox">&nbsp;Ignorer la casse </span>. Pour créer 
+        un langage utilisateur, vous devez aussi définir les extensions de fichier à associer pour détection 
+        automatique de langage dans la zone de texte avec l'étiquette <span class="label">&nbsp;Ext </span>.
+        La plupart des paramètres ont un style de texte associé. &nbsp;Ils fonctionnent de la même 
+        manière que dans le <a href="StylerConfigurator.html">Configurateur de coloration syntaxique</a>.
+    </p>
+    <p>&nbsp;Les autres aspects du langage sont divisés en quatre groupes de contrôles.
+    Prenez le temps de lire le totoriel sur <a class="extlink" href="http://udl20.weebly.com">le site du développeur</a> pour des exemples et détails supplémentaires uiles.</p>
+    <h3>&nbsp;Style par défaut et pliage (onglet <span class="label">Bloc & défaut</span>)</h3>
+    <p>&nbsp;Le style par défaut contrôle le texte (texte qui n'a pas d'attributs spéciaux ou de marque) et 
+        les mots-clefs qui contrôlent l'escamotage, ainsi que quelques réglages plus fins de celui-ci. &nbsp;Un mot-clef dans le groupe <span class="label">Délimiteur de bloc ouvrant</span> va créer 
+        un nouveau groupe qui peut être développé ou réduit. &nbsp;Un mot-clé dans le groupe 
+        <span class="label">Délimiteur d bloc fermant</span> ferme le groupe dernièrement ouvert.</p>
+    <h3> &nbsp;Mots-clé (onglet <span class="label">Mots-clés</span>)&nbsp; </h3>
+    <p> &nbsp;Cet onglet contrôle quels mots clé sont associés  au
+         langage.&nbsp;Vous pouvez définir jusqu'à huit groupes de mots-clé, chacune avec son propre style. 
+		 &nbsp;Si vous activez l'option <span class="checkbox">&nbsp;Préfixe </span>&nbsp;pour un groupe, cela signifie que ces mots-clé peuvent être des préfixes 
+        de mots entiers, qui seront donc détectés même s'ils sont directements, et colorés en entier. Il est aussi possible de définir
+		un mot-clef par une suite de plusieurs mots (comme "end if"). Veuilez vous référer au tutoriel pour de plus amples informations.
+    </p>
+    <h3><a name="comments"></a>&nbsp;Commentaires / nombres (onglet <span class="label">Commentaires & Nombre</span>) </h3>
+    <p> &nbsp;Cet onglet contrôle le comportement et l'apparence des commentaires, et l'apparence des nombres. Vous pouvez définir 
+        des symboles qui repèrent les commentaires et les commentaires de ligne. Ces derniers commencent à partir 
+        du symbole lui-même et vont jusqu'à la fin de la ligne. Vous pouvez également définir les symboles de bloc de commentaires.
+        Le symbole de début de commentaires commence le bloc&nbsp;jusqu'à ce que le symbole de fin de commentaire soit atteint.
+</p><p>On peut définir des styles internes aux commentaires. Non seulement cela permet, si vous prenez cete option, les 
+commentaires imbriqués, mais aussi de marquer de leur style les mots-clef ou chaînes de caractères dans les commentaires.
+</p><p>A priori, les nommbres ne sont reconnus que s'ils commencent un mot ne comportant que des caractères entre 0 et 9, à moins qu'il ne suive la yntaxe standard des nombres en notation scientifique.
+Toutefois, les nombres peuvent être précédés ou suivis optionnellement, de certains caract_res (comme "0x", "€" et autres).
+On peut définir des caractères supplémentaires comme faisant partie des nombres avec préfixe. Ainsi,
+les lettres de 'a' à 'f' seraient indiquées comme chiffres hexadécimaux, de sorte que le nombre dans son entier soit colorisé correctement..
+Des signes d'intervalle entre nombres peuvent aussi être définis. </p><p>
+ <h3> &nbsp;Les opérateurs et les séparateurs (onglet <span class="label">Opérateurs</span>) </h3>
+    <p> &nbsp;Cet onglet contrôle quels 
+        sont les symboles opérateur et si ces symboles agissent comme des séparateurs. Les 
+        symboles opérateurs sont des caractères qui séparent deux mots. Ils se comportent comme des espaces, mais peuvent
+        être présentées différemment.
+		Certains langages utilisent des mots en tant qu'operateure, comme "and" au lieu de "&amp;&amp;". 
+		Le second groupe d'operateurs est prévu pour eux. Les deux types d'opérateurs sont colorisés de la même manière.
+		 Le tutoriel vous suggérera des usages innovants pour le second groupe.
+</p><p>
+		&nbsp;Les délimiteurs sont des caractères uniques et généralement définie par paires.
+        Le texte entre une paire de délimiteurs possède le style défini pour cette paire. &nbsp;Un bon exemple est une chaîne de caractères, qui est délimitée
+        des deux côtés avec des guillemets et marquée d'une couleur spécifique uniforme. &nbsp;Dans de nombreux langages,
+        une chaîne peut contenir le délimiteur de chaîne, qui est alors protégé par un caractère dit d'échappement qui déclare que ce
+        caractère fait partie de la chaîne; vous pouvez aussi définir ce caractère d'échappement.
+    </p>
+    <h3><a name="Storing"></a>&nbsp;Stockage et exportation d'un nouveau langage :</h3>
+    <ul>&nbsp;Les paramètres pour un langage défini par l'utilisateur spécifique sont stockés dans un fichier de configuration appelé 
+        <tt>userDefineLang.xml</tt>. Ceci est pratique lorsque vous avez défini 
+        un seul langage, ou lorsque vous souhaitez partager tous les langages 
+        que vous avez définis. Comme ce schéma est parfois à trop gros grain, vous pouvez également 
+        :<li> &nbsp;Importer un langage à partir d'un fichier externe, 
+            compatible avec <b>Notepad++</b>. &nbsp;Les modifications seront sauvegardées dans votre fichier pour tous les langages.</li>
+        <li>&nbsp;Exporter une langue individuelle dans un fichier .Xml.</li>
+        Notez que le bouton <span class="button">&nbsp;Enregistrer sous </span> 
+        &nbsp;ne crée pas de nouveau fichier. Il reproduit le langage courant sous un nouveau nom que vous fournissez. <span class="button">&nbsp;Exportation </span> &nbsp;crée 
+        phisiquement un nouveau fichier. De même, <span class="button"> &nbsp;créer un nouveau...  </span> 
+        crée un nouveau langage avec tous des attributs réinitialisés et portant le nom que vous fournissez.
+    </ul>
+    <p> &nbsp;Attention!!!! Si vous importez un langage que vous avez déjà, vous obtiendrez des entrées en double dans la liste des langages
+        et dans le menu <span clas="menu_item">Langages</span>.
+    </p>
+</body>
+</html>

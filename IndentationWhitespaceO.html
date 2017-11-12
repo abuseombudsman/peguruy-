@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="Indentation,décaler,décalage">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Indentation et espacement</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <base target="_top">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="StandardOperations.html">Actions Standard</a></td><td><a href="Editing_Scint.html"><!---->Edition</a></td><td>Suivant: <a href="Overtype.html">Mode Refrappe</a></td>
+</tr></table>
+
+    <h1>Indentation</h1>
+    <p> Le retrait du texte est une opération courante lors de l'édition de code source, et Scintilla dans <b>Notepad++</b>
+        le supporte complètement. L'Indentation est l'ajout d'espace supplémentaire au début d'une ligne pour séparer des blocs de texte,
+        afin de monter une hiérarchie entre des bloc de lignes. 
+    </p>
+    <p> Normalement, lors de l'édition, un appui sur la touche de <span class="shortcut">tabulation</span>     va insérer un caractère de tabulation
+        à l'emplacement actuel. Toutefois, si du texte est sélectionné, en appuyant sur la touche de <span class="shortcut">tabulation</span>
+        (par défaut), c'est l'indentation qui est activée, ajoutant de l'espace au début de chaque ligne du texte sélectionné,
+        ce qui est plus efficace que de répéter l'opérations ligne à ligne.  Appuyez sur 
+        <span class="shortcut">Maj + TAB</span> diminue le retrait. Ces commandes sont également disponibles
+		via <span class="menu_item">Edition -&gt; Indentation -&gt; Augmenter / Diminuer le retrait</span>.
+    </p>
+    <p> L'Indentation se fait par niveau, chaque niveau ajoutant une quantité prédéfinie d'espaces (ce paramétrage peut être configuré au niveau
+        d'une langue : voir <a href="Preferences.html#Edit_Components">Préférences</a> ). Il y a aussi une option pour insérer un caractère 
+        de tabulation ou (plusieurs) espaces (pour cela, aussi voir <a href="Preferences.html#Edit_Components">Préférences</a> ).
+    </p>
+    <p> « <b>Scintilla</b> » peut afficher une ligne verticale pour chaque niveau; l'activation se fait en sélectionnant 
+        <span class="menu_item">&nbsp;Affichage -&gt;Symboles spéciaux -&gt;Afficher le Guide d'indentation&nbsp;</span> ou en appuyant sur 
+        <img src="./Images/Toolbar/indentGuide.jpg" style="width: 16px; height: 16px;">. Cette directive constitue un repère visuel pour
+        suivre le niveau d'indentation des lignes du groupement courant. Pour modifier la couleur utilisée, voir
+        <a href="StylerConfigurator.html">Configurateur de coloration syntaxique</a> (à noter que si le symbole sous le curseur est une 
+        accolade, le guide prend la couleur du caractère en évidence). 
+    </p>
+	
+<h2>Espacemnt</h2>
+Ce terme recouvre tous les caractères qui sont rendus par un blanc à l'impression. Les exemples les plus fréquents en sont les espaces et les tabulations horizontales.
+Si l'indentation utilise ces caractères, il peuvent aussi apparaître dans le corps de la ligne, en particulier à la fin.
+Notepad++ a un menu <span class="menu_item">Edition -&gt; Operations sur espacement</span> 
+comportant des commandes pour
+<ul>
+<li>Retirer les espaces en début de ligne, à la fin ou les deux;</li>
+<li>Supprimer les especaes redoublés, ou les caractères de fin de ligne;
+</li><li>Transformer les tabulations en espaces ou vice versa, au moyen des préférences du langage du document.
+</li></ul>
+	
+</body>
+</html>

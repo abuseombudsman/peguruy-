@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="barre,état">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Barre d'état</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="TabBar.html">Barre d'onglets</a></td><td><a href="GUIelements.html"><!---->El&eacute;ments d'interface graphique</a></td><td>Suivant: <a href="ToolBar.html">Barre d'outils</a></td>
+</tr></table>
+
+<h1> &nbsp;Barre d'état </h1>
+<ul>&nbsp;La barre d'état affiche des informations supplémentaires sur le document actif actuellement et est découpée en six sections. 
+    <li> &nbsp;La première section indique le langage actuel qui est sélectionné pour ce document 
+        (voir <a href="Languages.html">les langages</a> ). 
+    </li>
+    <li> &nbsp;La deuxième section montre le nombre de caractères que le document contient. Ce n'est pas 
+        forcément la taille du fichier du document (à l'exception des documents ANSI, voir
+        <a href="Encoding.html">encodage / décodage</a> pour plus de détails). Cette section contient aussi le nombre de lignes. 
+		<p>Un <span class="shortcut">double clic</span> sur cette section affiche la boîte de dialogue des statistiques.
+		qui affiche davantage d'information:
+<ul>
+<li>Chemin complet du document actif
+</li><li>Date de création
+</li><li>Date de dernière modification
+</li><li>Taille du document, en octets
+</li><li>Nombre de caractères du document, hors espaces
+</li><li>Nombre de caractères du document
+</li><li>Nombre de lignes
+</li><li>Nombre de mots
+</li><li>Taille de la selection (en caractères, octets and plages)
+</li></ul>
+Notez que les nombres de caractères et d'octets ne sont pas fonction l'un de l'autre
+ in UTF-8 (see&nbsp;<a href="Encoding.html">Encoding</a>)	
+    </li>
+    <li>&nbsp;Après cela, vous trouverez des informations sur le curseur dans le document. &nbsp;Elle contient la ligne actuelle 
+        («Ln», la première ligne est la ligne 1), la colonne en cours (« Col », première position est 1), la longueur de la sélection
+        à la fois en caractères et d'octets (voir <a href="Encoding.html">encodage / décodage</a> ). 
+        Le nombre de plages sélectionnées est également affiché. Si vous <span class="shortcut">double-cliquez</span> sur cette section, 
+        la <a href="Gotodialog.html">boîte de dialogue Aller à la ligne</a> apparaîtra. S'affichent également le nombre e caractères sélectionnés
+				 et le nombre de lignes de la sélection ('Sel', avec un séparateur vrtical). En cas de sélection multiple ou rectangulaire, 'N/A' est affiché.
+    </li>
+    <li> &nbsp;La quatrième section montre le format de saut de ligne en cours (voir <a href="Newlineformat.html">format saut de ligne</a> ).</li>
+    <li> &nbsp;La cinquième section présente le codage des caractères en cours du document (voir <a href="Encoding.html">encodage / décodage</a> ).</li>
+    <li> &nbsp;La dernière et sixième section indique le statut actuel de la frappe pour la vue active: 
+         insertion =&nbsp;INS, remplacement = OVR&nbsp; (voir <a href="Overtype.html">Mode Refrappe</a> pour plus d'informations).
+        En cliquant sur cette section, vous faites bascules le mode&nbsp; entre Insertion et Remplacement.
+    </li>
+</ul>
+</body>
+</html>

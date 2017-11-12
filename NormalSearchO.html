@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="KEYWORDS" content="recherche,normale,standard" />
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com" />
+    <title>Recherche Normale</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <base target="_top" />
+</head>
+<body>
+<table class="navbar">
+<tr><td>&nbsp;</td><td><a href="Searching.html"><!---->Rechercher</a></td><td>Suivant: <a href="Replacing.html">Remplacer</a></td>
+</tr></table>
+
+    <h1>&nbsp;Recherche normale  </h1>
+    <ul><img src="Images/Screenshots/find.png"/><br>
+        Vous pouvez rechercher du texte comme dans la plupart des programmes utilisant la boîte de dialogue <b>Rechercher / Remplacer</b>. Vous pouvez
+        ouvrir cette boîte de dialogue par: 
+        <li><span class="menu_item"> Rechercher -&gt;&nbsp; Rechercher</span> (ou en appuyant sur <img src="Images/find.jpg" width="20" height="20"/>&nbsp;),</li>
+        <li><span class="menu_item">Rechercher -&gt; Remplacer</span><strong></strong> (ou en appuyant sur <img src="Images/findReplace.jpg" width="20" height="20" /> &nbsp;)</li>
+        <li>Ou <span class="menu_item">Recherche-&gt; Rechercher dans les fichiers.</span></li>
+    </ul>
+    <p>&nbsp;Dans chacune de ces options, ouvrez l'onglet correspondant dans le dialogue <b>Rechercher / Remplacer</b>. Cette boîte de dialogue
+         restera toujours au-dessus du texte, mais vous pouvez toujours continuer à modifier le texte si lle est ouvert, et vous pouvez la configurer 
+         pour qu'elle soit transparente (en utilisant l'option Transparence), lors de son inactivité (par perte du focus) ou tout le temps.
+		  Le curseur contrôle le niveau de transparence. Notez que la transparence n'est disponible quà partir de Windows 2000.
+    </p>
+    <p>&nbsp;Dans le champ Rechercher, tapez le texte que vous souhaitez trouver. Cette zone est automatiquement remplie avec le texte sélectionné en cours,
+        ou le mot sous le curseur, ou le dernier modèle de recherche, lorsque la boîte de dialogue Rechercher est ouverte. La liste déroulante contient 
+        des éléments de recherche antérieure.
+    </p>
+    <ul>&nbsp;Les options suivantes vont limiter la recherche:
+        <li>&nbsp;<span class="checkbox"> Mot entier uniquement </span> &nbsp;: la recherche n'aboutit que si le texte
+            recherché constitue un mot complet (par exemple : si la chaîne trouvée est bornée par des blancs ou des caractères de ponctuation).
+        </li>
+        <li>&nbsp;<span class="checkbox"> Respecter la casse </span> : la chaine recherchée le sera à la majuscule /minuscule près. Si cette option est
+            désactivée, la recherche est insensible à la casse.
+        </li>
+        <li>&nbsp;<span class="checkbox"> Boucler </span>&nbsp;continue en haut du fichier lorsque la recherche rencontre la fin de fichier, 
+            quel que soit l'emplacement initial du curseur. 
+        </li>
+    </ul>
+    <ul>&nbsp;Le mode de recherche détermine la façon dont la requête sera traitée : 
+        <li>&nbsp;En <span class="radio"> Mode Normal </span>, le texte sera recherché littéralement.</li>
+        <li>&nbsp;En <span class="radio"> Mode étendu </span>, des séquences de caractères spéciaux seront interprétées.
+            Dans ce cas, vous pouvez choisir entre : 
+            <ul>
+                <li>&nbsp;\\ - Barre oblique inverse; </li>
+                <li>&nbsp;\t - caractère de tabulation; </li>
+                <li>&nbsp;\r - caractère CR; </li>
+                <li>&nbsp;\n - caractère LF; </li>
+                <li>&nbsp;\0 - caractère NULL; </li>
+                <li>&nbsp;\x## - Valeur hexadécimale (entre 00 et FF); </li>
+                <li>&nbsp;\u#### - valeur hexadécimale étendue entre 0000 et FFFF, signifiait pour les caractères Unicode); </li>
+                <li>&nbsp;\d### - valeur Décimal (entre 000 et 255); </li>
+                <li>&nbsp;\o### - valeur octal (entre 000 et 377);</li>
+                <li>&nbsp;\b######## - Valeur binaire (entre 00000000 et 11111111). </li>
+            </ul>
+        </li>
+        <li>&nbsp;Dans <span class="radio">&nbsp;une expression régulière </span>, la requête sera traitée comme une expression régulière.
+            <b>Notepad++</b> utilise la syntaxe PDRE, qui est un standard bien établi. Vous trouverez 
+			<a class="extlink" href="http://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html">ici</a> une documentation complète. 
+			<a class="extlink" href="http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Regular_Expressions">Cette page</a> fournit quelques exemples simples
+			(ces deux documents sont en anglais).			
+        </li>
+    </ul>
+	<p>Dans la liste ci-dessus, # signifie «un chiffre». Selon le cas, «chiffre» peut avoir un sens différent: 
+	par exemple, en binaire, 0 et 1 sont les seuls chiffres.    
+	</p><p>&nbsp;Le sens de la recherche détermine dans quelle direction, par rapport au curseur, la recherche sera effectuée. 
+        <span class="radio">Haut</span> signifie que c'est le texte avant le curseur qui sera analysé, 
+        <span class="radio">bas</span> signifie que c'est le texte après le curseur qui sera analysé.
+    </p>
+		<p>Normalement, lors d'un Find, le texte trouvé est sélectionné. Une difficulté, n mode Expressions rrégulières, est que le texte trouvé 
+		peut être de longueur nulle, par exemple quand on recherche "^". Dans ce cas, 
+		une infobule montr la position de la chaîne vide résultat.
+    <p>&nbsp;Pour trouver l'occurrence suivante dans le sens de la recherche, appuyez sur<span class="button"> Suivant </span> (ou Enter). 
+        <span class="button"> Compter </span> compte le nombre d'occurrences de la recherche, 
+        <span class="button"> Trouver tous dans tous les documents ouverts </span>&nbsp;    va lancer la recherche sur tous les documents ouverts et 
+        affiche une liste de résultats pour chaque fichier, voir aussi <a href="SearchinginFiles.html">la recherche dans les fichiers</a>.
+        <span class="button">Trouver tous dans les documents actuels</span> se comporte d'une manière très similaire.
+    </p>
+    <p>&nbsp;<span class="button">Fermer</span> ferme la boîte de dialogue de recherche (bouton de fermeture et l'
+        <span class="shortcut">Echap</span> font la même chose).
+    </p>
+	
+<h2>Localisation de caractères</h2>
+<img src="images/screenshots/findinrange.png" style="width:420px; height:240px;" alt="" align="right"/>
+<p>Une des utilisations possibles de la fonction de recherche est de repérer les 
+occurrences de certains types de caractères dans un document, par exemple 
+des letres accentuées qu'il vous faut convertir en entités HTML. Ceci peut se faire via la boîte de dialogue 
+<span class ="menu_item">Rechercher -> Trouver des caractères d'une plage...</span>.
+Ce dialogue vous permet de <span class="button">Trouver</span> le prochain ou précédent cractère faisant partie 
+de la plage ASCII (0..127), non ASCII (128..255) ou d'une dont vous spécifiez les limites -
+les valeurs supérieures à 255 ne sont pas correctement interprétées. La recherche peut
+<span class="checkbox">Boucler</span> à votre demande.  
+</p>	
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="préférence,configurer">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Préférences</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>&nbsp;</td><td><a href="Settings.html"><!---->Param&egrave;trages</a></td><td>Suivant: <a href="StylerConfigurator.html">Configurateur de coloration syntaxique</a></td>
+</tr></table>
+
+    <h1>&nbsp;Préférences </h1>
+    <p>&nbsp;Vous pouvez configurer de nombreux aspects de <b>Notepad++</b> en utilisant la boîte de dialogue <b>&quot;Préférences&quot;</b>. La boîte
+        de dialogue se compose de plusieurs onglets qui contiennent des options qui sont pertinentes sur certains aspects de <b>Notepad++</b>
+        (par exemple, l'interface ou les options de sauvegarde).<br><img src="./Images/Screenshots/preferences.png"/>
+    </p>
+    <h2><a name="General">Général</a></h2>
+    <dl>Les paramètres généraux permettent de contrôler l'apparence de l'interface principale. Vous pouvez contrôler la barre d'onglets,
+        la barre d'outils, la barre d'état et le menu à partir d'ici, ainsi que la langue de l'interface.
+        <dt> &nbsp;Localisation: 
+            <dd>&nbsp;Cette liste déroulante affiche toutes les langues que vous pouvez utiliser pour 
+                que <b>Notepad++</b> parle votre langue. &nbsp;Si vous cliquez sur une de ces langues, tous les éléments d'interface utilisateur sont immédiatement traduits dans cette langue. &nbsp;Les fichiers de localisation sont 
+                conservés dans le sous-dossier de localisation <tt>\localization</tt> de <b>Notepad++</b>.
+            </dd>
+        </dt>
+        <dt>&nbsp;Barre d'outils:
+		<span style="font-weight:normal;">
+            <ul>
+                <li> &nbsp;<span class="checkbox"> Cacher </span> - Cache complètement la barre d'outils:. </li>
+                <li> &nbsp;Les choix suivants donnent un résultat immédiat, mais parfois un redémarrage est nécessaire 
+                    pour charger correctement les icônes
+                </li>    
+                <ul>
+                    <li>&nbsp;<span class="radio">Petites icônes</span> - <b>Notepad++</b> utilise des icônes de petite taille&nbsp; pour la barre 
+                        d'outils. &nbsp;Cela peut concerner les icônes standard ou des icônes personnalisées. 
+                    </li>
+                    <li>&nbsp;<span class="radio">Grandes icônes</span> - <b>Notepad++</b> utilise des icônes de grande taille pour
+                        la barre d'outils. &nbsp;Cela peut peut concerner les icônes standard ou des icônes personnalisées. 
+                    </li>
+                    <li>&nbsp;<span class="radio">&nbsp;Icônes standard</span> - Ce sont les icônes intégrés par défaut. 
+                        C'est aussi la seule option utilisable pour les icônes des plugins en barre d'outils. 
+                    </li>
+                </ul>
+            </ul>
+        </span></dt>
+        <dt>&nbsp;Barre de menu: </dt>
+            <dd>&nbsp;<span class="checkbox">Cacher</span> - Si vous cochez cette option, la barre de menus se masque automatiquement. Pour montrer 
+                la barre de menu temporairement, appuyez sur la touche <span class="shortcut">Alt</span> ou la touche <span class="shortcut">F10</span>. 
+				La sélection d'une option, la touche <span class="shortcut">Echapp</span> ou 
+                la sélection d'une autre fenêtre masquera de nouveau le menu. 
+            </dd>
+        
+        <dt> &nbsp;Barre d'état:</dt>
+            <dd> &nbsp;<span class="checkbox">Afficher la barre d'état</span> - Cocher pour afficher la barre d'état.</dd>
+        
+<dt>Commutateur de Documents: 
+</dt><dd>Détermine comment s'affiche le changeur de document vertical:
+<ul><li><span class="checkbox">Montrer</span>: afffiche le commutateur
+</li><li><span class="checkbox">Masquer la colonne des extensions</span>:par défaut, les extensions sont affichées dans une colonne séparée à droite. La colonne peut être masquée.
+</li></ul>
+</dd>		
+        <dt> &nbsp;barre d'onglets: 
+		<span style="font-weight: normal;">
+            <ul>
+            <li>&nbsp;<span class="checkbox">Cacher</span> - Si vous cochez cette option, la barre d'onglets 
+                est masquée. Vous pouvez toujours ouvrir plusieurs documents, mais vous devrez passer 
+                par les raccourcis clavier plutôt que par l'utilisation de la barre d'onglets. 
+            </li>
+            <li>&nbsp;<span class="checkbox">Multi-Ligne</span> - Si vous cochez cette option, 
+                les pnglets qui ne tiennent pas en longueur sur la barre d'onglets seront visibles sur les lignes 
+                suivantes. Sinon, deux boutons fléchés permettent de faire défiler les onglets.
+                &nbsp;Notez que le document actif sera toujours sur la rangée du bas.
+            </li>
+            <li>&nbsp;<span class="checkbox">Vertical</span> - Cochez cette option pour une rotation de 90° vers la gauche 
+                du libellé de l'onglet de la barre ainsi que le déplacement sur le côté gauche de l'écran.
+            </li>
+            <li>&nbsp;<span class="checkbox">Réduire la taille</span> - Adapte la police et les icones pour que le maximum d'informations de 
+                l'onglet soit visible.
+            </li>
+            <li>&nbsp;<span class="checkbox"> Verrouiller (pas de glisser/déposer) </span> - désactive la possibilité de trier les documents 
+                en faisant glisser les onglets.
+            </li>
+            <li> &nbsp;<span class="checkbox">Colorer les onglets inactifs</span> - Si 
+                cette option est activée, les onglets inactifs auront une couleur de fond 
+                particulière (voir: Paramètres, <a href="StylerConfigurator.html#Caret_colour">Configurateur de coloration syntaxique</a>).
+            </li>
+            <li> &nbsp;<span class="checkbox">Barre colorée sur l'onglet actif</span> - Si vous cochez cette 
+                case, l'onglet actif de la vue active aura une ligne colorée (par défaut orange, voir Paramètres
+                 <a href="StylerConfigurator.html#Caret_colour">Configurateur de coloration syntaxique</a>).
+            </li>
+            <li> &nbsp;<span class="checkbox">Bouton de fermeture sur chaque onglet</span> - 
+                cette option ajoute un bouton de fermeture sur chaque onglet, pour fermer le 
+                document courtant.
+            </li>
+            <li> &nbsp;<span class="checkbox"> Fermer 
+                l'onglet par Double clic </span>&nbsp;- Si elle est cochée, double-cliquer 
+                ferme l'onglet. 
+            </li>
+            </ul></span>
+        </dt>
+    </dl>
+    <h2><a name="Edit_Components"></a> &nbsp;Zone d'édition </h2>
+    <dl>&nbsp;Ces paramètres affectent le comportement et l'apparence de <b>Scintilla</b>, l'outil d'édition utilisé par <b>Notepad++</b>.
+        <dt> &nbsp;Paramètres du curseur :
+		<span style="font-weight:normal">
+        <ul>
+            <li> &nbsp;<span class="label"> Largeur </span> - Définit la largeur en pixels du curseur, ou le transforme en un bloc 
+                qui est de la taille du caractère en cours (si imprimable, sinon de la taille d'un espace). 
+            </li>
+            <li> &nbsp;<span class="label">Clignotement </span>&nbsp;- Variation de vitesse (R) pour ralentir (L)&nbsp;pour 
+                augmenter (entre non visible et&nbsp; toujours allumé). <br> &nbsp;Vous pouvez changer la couleur du curseur 
+                (<a href="StylerConfigurator.html#Caret_colour">Configurateur de coloration syntaxique</a>). 
+            </li>
+        </ul></span>
+        </dt>
+        <dt>&nbsp;Multi-édition 
+        <dd> &nbsp;Vous pouvez activer ou désactiver cette fonctionnalité grâce à la case à cocher. Vous 
+        pourrez sélectionner des zones non contiguës (voir <a href="Selecting.html">Sélection de texte</a> ) 
+        et rechercher un texte dans toutes les parties de la sélection. 
+	    <dt>&nbsp;Style de la marge d'escamotage 
+		<dd> &nbsp;Le style des icônes qui indiquent le statut de pliage (Voir 
+            <a href="Folding.html">plier/déplier</a> ). &nbsp;Choisissez parmi les 4 types proposés, ou Aucun pour désactiver l'escamotage.
+        </dd>
+        <dt>&nbsp;Largeur des lignes
+            <ul><span style="font-weight:normal;">
+            <li> &nbsp;<span class="checkbox">Afficher la marge Droite</span> - 
+                Activer cette option tracera un trait vertical à travers le document à l'emplacement voulu.
+            </li>
+            <li> Mode. 
+                <ul>
+                <li>&nbsp;<span class="radio"> Afficher un filet vertical</span> - Si 
+                    sélectionné, le bord sera matérialisé en utilisant une ligne en arrière-plan 
+                </li>
+                <li>&nbsp;<span class="radio"> Colorer l'arrière plan</span> - Si sélectionné, le bord sera matérialisé en changeant
+                    la couleur de fond des caractères au delà du bord. &nbsp;Vous pouvez changer la couleur avec le 
+                    <a href="StylerConfigurator.html#Edge_colour">configurateur de colorisation syntaxique</a> . 
+                </li>
+                <li>&nbsp;<span class="label"> Nombre de colonnes </span>: La distance en colonnes (déterminée par la taille
+                    de l'espace) à laquelle le bord sera matérialisé.
+                </li>
+                </ul> 
+            </li>
+            </spa,></ul>
+        </dt><br>
+        <dt> &nbsp;Autres options 
+		<span style="font-weight:normal">
+            <ul>
+            <li> &nbsp;<span class="checkbox">Afficher 
+                la numérotation des lignes </span>&nbsp;- Si elle est cochée, les numéros de ligne seront 
+                visible. Vous pouvez changer la couleur avec le <a href="StylerConfigurator.html#Current_line_background_colour">Configurateur de coloration syntaxique</a> . Lorsqu'elle 
+                est visible, la numérotation peut accueillir trois chiffres, et s'élargira  
+                 si nécessaire pour afficher des nombres de plus grande longueur. 
+            </li>
+            <li> &nbsp;<span class="checkbox"> Afficher la marge des signets </span>&nbsp;- Si elle est cochée, la marge des signets sera 
+                visible. 
+            </li>
+            <li> &nbsp;<span class="checkbox">Surligner la ligne courante 
+                </span>&nbsp;- Si elle est cochée, la ligne à laquelle le curseur est présent sera 
+                visible avec une couleur de fond spéciale que vous pouvez modifier avec 
+                le <a href="StylerConfigurator.html#Current_line_background_colour">Configurateur de coloration syntaxique</a>.
+            </li>						
+            <li> &nbsp;<span class="checkbox">Désactiver le défilement intelligent (si vous avez un problème de Touchpad) 
+                </span>&nbsp;-  Certains pilotes système s'interposent entre l'utilisateur et le composant Scintilla, empêchant celui-ci de réagir.
+								 Ne cochez cette case que si vous n'arrivez pas à ufaire défiler le texte avec la molette de la souris - le problème apparaît plutôt sur les portables.
+            </li>
+			</li><li>Le curseur <span class="label">Border width</span> contrôle la largeur de la frontière de la zone d'édition, qui est aussi la distance entre l'onglet et le texte édité. Sa valeur en pixels s'affiche à droite du curseur.
+			 En fonction de la résolution de votre écran, vous pouvez ajuster ce paramètre pour am"liorer la lisibilité ou augmenter l'espace disponible.
+            </li></ul></span>
+        </dt>
+    </dl>
+    <h2><a name="New_Document_Open_Save_directory"></a> &nbsp;Nouveau document</h2>
+    <dl> &nbsp;Ces options changent la façon de créer les nouveaux documents. 
+        <dt> &nbsp;Nouveau document: 
+			<span style="font-weight:normal">
+            <ul>
+            <li>&nbsp;<span class="label">Encodage </span>: Permet de choisir l'encodage 
+                par défaut à utiliser (voir <a href="Encoding.html">encodage</a> ).
+            </li>
+            <li>&nbsp;<span class="label">Format des sauts de ligne </span>: permet de choisir quel est le format de saut de 
+                ligne utilisé par défaut (voir     <a href="Newlineformat.html">Format Saut à la ligne</a> ).
+            </li>
+            <li>&nbsp;<span class="label">Langage par défaut </span >:&nbsp;définit quelle coloration syntaxique sera utilisée pour tout document 
+                nouvellement créé. &nbsp;Sélectionne la bonne occurrence&nbsp;dans le menu Langage. Les langages définis par l'utilisateur 
+                et les langages externes ne peuvent pas être sélectionnés. 
+            </li>
+            </ul></span>
+        </dt></dl>
+    <h2><a name="New_Document_Open_Save_directory"></a>Répertoire par défaut </h2>
+        <dl><dt>&nbsp;Dossier par défaut (Ouvrir / Enregistrer):
+            <dd>&nbsp;Ce paramètre contrôle le répertoire proposé par <b>Notepad++</b> à chaque utilisation des boites de dialogues <b>Ouvrir / enregistrer</b>.
+                Il est à noter que le répertoire par défaut n'est pas le même que le répertoire courant (répertoire de travail) de <b>Notepad++</b>. 
+                <ul>
+                <li>&nbsp;<span class="radio">Utiliser celui du document actuel&nbsp;</span> - Si cette option est sélectionnée, le répertoire par défaut 
+                    sera le répertoire du fichier actuellement actif. &nbsp;Si le fichier est un nouveau document non enregistré, ce sera le répertoire de
+                    travail de <b>Notepad++</b>.
+                </li>
+                <li> &nbsp;<span class="radio"> Mémoriser le dernier répertoire sélectionné </span>&nbsp;- Si cette option est sélectionnée, le répertoire par défaut sera
+                    d'abord le répertoire où <b>Notepad++</b> a été lancé (vous pouvez le contrôler en ajustant le raccourci que vous utilisez pour 
+                    <b>Notepad++</b>), en suivant le répertoire affiché dans les boites de dialogues <b>Ouvrir / Enregistrer</b>.
+                </li>
+                <li> &nbsp;<span class="radio">&nbsp;&nbsp;&nbsp;  </span> - Le répertoire par défaut peut être configuré pour un chemin
+                    d'accès donné, saisi dans la zone de texte contiguë ou par le bouton <span class="button">&nbsp;&nbsp;Parcourir ... </span>.
+                    Si le chemin n'est plus valide, le répertoire de travail de <b>Notepad++</b> sera utilisé. Vous êtes autorisé à utiliser 
+                    des variables d'environnement, en utilisant la syntaxe %<i>var-name</i>% des fichiers batch. 
+                </li>
+                </ul>
+            </dd>
+        </dt>
+		       <dt> &nbsp;Historique des fichiers récents :
+		<span style="font-weight:normal;"> 
+            <ul>
+            <li> &nbsp;<span class="label">Le nombre maximum de fichiers récents</span> &nbsp;- N'importe quel nombre de 0 à 30.
+                Contrôle le nombre de fichiers qui sont enregistrés dans l'historique. 0 désactive l'enregistrement.
+            </li>
+            <li> &nbsp;<span class="checkbox"> Ne pas vérifier au lancement </span> - Si elle est cochée, <b>Notepad++</b> ne vérifiera 
+                pas la validité des fichiers de l'historique. &nbsp;Si elle est décochée, <b>Notepad++</b> va vérifier l'existence de chaque fichier.
+                Cette option est recommandée à l'activation dans le cas d'utilisation de fichiers en réseau. 
+</li><li><span class="checkbox">In Submenu</span> : Quand cette case est cochée, la liste se présente à partir d'un sous-menu de <span class="menu_item">Fichiers</span>.
+  Sinon, la liste est insérée sous forme d'entrées supplémentaires vers le bas de <span class="menu_item">Fichiers</span>.
+</li><li><span class="radio">Only File name</span> : Avec cette option, la liste des fichiers récents ne montre que les noms de fichier, sans leur chemin. 
+</li><li><span class="radio">Full File Name Path</span> : Avec cette option, la liste des fichiers récents montre les noms complets des fichiers, avec l'intégralité de leur chemin.
+</li><li><span class="radio">Customize maximum length</span> : Semblable à l'option précédente, mais les noms complets de fichier 
+sont tronqués s'ils sont trop longs. En activant le bouton, il apparaît un lien avec la longueur maximale applicable (100 par défaut).
+Ce paramètre peut être modifié en cliquant le lien.
+</li></ul></span></dt>
+    </dl>
+    <h2><a name="File_Association"></a> &nbsp;Association de fichier </h2>
+    <p>&nbsp;Vous pouvez associer des fichiers à <b>Notepad++</b>, pour qu'il démarre à l'ouverture de ces fichiers. 
+        Sélectionnez un type de fichier, puis sélectionnez l'extension désirée et appuyez sur <span class="button">&nbsp;-&gt;&nbsp;</span> pour associer le fichier. Pour ajouter
+        un type personnalisé de fichier, sélectionnez Personnaliser, entrez l'extension et appuyez sur le <span class="button">&nbsp;-&gt;&nbsp;</span>
+        Pour supprimer l'association, sélectionnez l'extension à dissocier et appuyez sur <span class="button">&nbsp;&lt;-&nbsp;</span>.
+    </p>
+    <h2><a name="Language_Menu"></a> &nbsp;Menu Langage</h2>
+    <p>&nbsp;Vous pouvez sélectionner les langages qui sont disponibles dans le menu <span class="menu_item">Langage</span>. 
+        Dans <span class="label">les langages disponibles</span>&nbsp; de la liste figurent les langages qui sont actuellement visibles.
+        Pour masquer un langage dans le menu, sélectionnez-le et appuyez sur le bouton <span class="button"> &gt; </span> &nbsp;pour le transférer vers les éléments cachés. Pour le faire réapparaitre, sélectionnez-le dans la liste <span class="label">&nbsp;des langages cachés </span>&nbsp;
+        et transférez-le vers les langages visibles en appuyant sur le bouton <span class="button">&nbsp;&lt; </span>.
+		<br>
+        &nbsp;L'aspect du menu des langages peut être encore contrôlé par la case à cocher 
+        <span class="checkbox">&nbsp;Compacter les langages </span>. Quand elle est cochée, les langages dont les noms commencent par la même lettre 
+        sont regroupées dans un sous-menu, au lieu d'être tous présents dans le menu lui-même.
+
+    <h2><a name="Language_Menu"></a> Tabulations </h2>
+   <p>Les paramètres de tabulation peuvent être ajustés langage par langage. &nbsp;La liste de droite a tous les langages prédéfinis, ainsi que
+        l'item [default] (par défaut). Ce dernier s'applique à tous les langages qui n'ont pas un paramètre spécifique, ainsi qu'à tous
+        les langages définis par l'utilisateur. Le cadre au dessous permet le réglage des paramètres de tabulation pour le langage sélectionné: 
+        <ul><li> &nbsp;<span class="label"> Taille des tabulations</span> - Taille en caractères espace d'un caractère de tabulation dans le document.</li>
+        <li>&nbsp;<span class="checkbox"> Remplacer par des espaces</span> - La tabulation se fera au moyen d'espaces et non pas  du caractère 
+            <b>Tab</b>. Le nombre d'espaces utilisés dépend de l'option précédente. 
+        </li>
+    </ul></p>
+    <h2><a name="Print"></a> &nbsp;Imprimer </h2>
+    <ul> &nbsp;Utilisez ces paramètres pour ajuster la mise en page et les couleurs utilisées pour imprimer un document, ainsi que 
+	l'en-tête et le pied de page. Ceux-ci peut être n'importe quelle chaîne ordinaire ou une variable qui va changer en fonction du document imprimé. 
+        <li><span class="checkbox">&nbsp;Imprimer la numérotation des lignes </span>&nbsp;- Si l'option est sélectionnée, la numérotation sera imprimée aussi.</li>
+        <li>&nbsp;Option couleur: 
+            <ul>
+            <li> &nbsp;<span class="radio"> Tel qu'à l'écran</span> - couleurs d'impression exactement comme elles sont sur l'écran.</li>
+            <li> &nbsp;<span class="radio">Inverser</span> - Impression du document avec une couleur de fond inversé
+                (blanc devient noir par exemple, et vice versa) et la couleur de premier plan par défaut inversé.
+                Toutes les autres couleurs resteront les mêmes. 
+            </li>
+            <li>&nbsp;<span class="radio">Noir et blanc</span> - Tous les textes seront imprimés en noir sur fond blanc.</li>
+            <li>&nbsp;<span class="radio">Aucune couleur de fond</span> - 
+                Tout les textes gardent leurs couleurs, mais les couleurs de fond (y compris la couleur par défaut) seront imprimées en blanc.
+            </li>
+            </ul>
+        </li>
+    </ul>
+    <dl>
+        <dt> &nbsp;Variables 
+            <dd>&nbsp;Vous pouvez utiliser des variables dans l'en-tête/pied de page. Il y a d'origine des variables énumérées renseignées par défaut,
+                mais vous pouvez également utiliser n'importe quelle variable utilisée par la boîte de dialogue Exécuter (voir 
+                <a href="Commands.html">commandes</a> ). La syntaxe est la même. Pour ajouter une variable prédéfinie dans le menu déroulant, cliquez sur 
+                <span class="button">&nbsp;Ajouter </span>.&nbsp;Le nom sera automatiquement copié dans la zone préalablement sélectionnée. 
+            </dd>
+        </dt>
+        <dt>&nbsp;En-tête: 
+            <dd> Contrôle le texte d'en-tête. &nbsp;Si n'importe quel texte en-tête est présent, il sera séparé du document par une ligne.
+                Utilisez les différents contrôles d'édition de modification de texte ajouté à l'en-tête. Vous pouvez ajouter du texte dans 
+                l'en-tête de gauche, de droite et du centre. Vous pouvez chosir une police de caractère spécifique pour l'en-tête. 
+            </dd>
+        </dt>
+        <dt> &nbsp;Pied de page: 
+            <dd> &nbsp;Contrôle le texte de bas de page. Mêmes fonctionnalités que pour l'en-tête.</dd>
+        </dt>
+    </dl>
+    <h2><a name="Backup"></a> &nbsp;Sauvegarde</h2>
+    <dl>
+        <dt> &nbsp;Sauvegarde : 
+		<span style="font-weight:normal;">
+            <ul> &nbsp;Contrôle le comportement de sauvegarde. &nbsp;Vous pouvez 
+                effectuer une sauvegarde automatique de chaque fichier modifié dans&nbsp; <b>Notepad++</b>.
+				En outre, les deux options suivantes peuvent être utilisées:
+				<li><span class="checkbox">&nbsp;Se souvenir de la session en cours pour le lancement prochain </span>&nbsp;- Si l'option est cochée,
+                    l'ensemble des dossiers ouverts dans <b>Notepad++</b> sera ouvert à nouveau lorsque <b>Notepad++</b> sera rouvert.
+                </li>
+				</li><li><span class="checkbox">Sauvegardes et enregistrements de session périodiques</span>
+Si cette case est cochée, Notepad++ stockera à intervalles réguliers le contenu de tous les documents ouverts 
+(sauvegardés ou non) des deux vues ainsi qu'un fichier de session les décrivant.
+Cet état sera restauré à la réouverture. Le nombre de seconde sémarant les instantanés 
+peut être renseigné sous forme d'un nombre entier (7 par défaut).
+<br><br>Les options suivantes concernent les copies de sauvegarde lors d'un enregistrement:
+                <li>&nbsp;<span class="radio">Aucun</span> - Pas de sauvegardes .</li>
+                <li>&nbsp;<span class="radio">Simple sauvegarde</span> - Une sauvegarde est enregistrée dans un fichier portant le même nom et 
+                    l'extension .bak est ajoutée (l'extension d'origine est préservée).
+                </li>
+                <li> &nbsp;<span class="radio">sauvegarde Détaillée</span> - même utilisation que l'option simple mais .bak est 
+                    remplacé par un horodatage. 
+                </li>
+                <li> &nbsp;<span class="checkbox">Dossier spécifique</span> - Si elle est cochée, un répertoire de sauvegarde 
+                    personnalisé est utilisé au lieu de sauver dans le même répertoire que le fichier 
+                    d'origine. 
+                </li>
+            </ul></span>
+        </dt></dl><br>
+    <h2><a name="Auto-Completion"></a> Saisie semi-automatique</h2>
+        <dl><dt> &nbsp;L'auto-complétion: 
+			<span style="font-weight:normal;">
+            <ul>&nbsp;Voir <a href="AutoCompletion.html">saisie semi-automatique</a> pour une explication du dispositif.
+            <li>&nbsp;<span class="checkbox"> Activer Auto-complétion</span> - Si elle est cochée, <b>Notepad++</b> va essayer de compléter le mot courant à partir des
+                caractère déjà écrits. 
+                <ul>
+                <li>&nbsp;<span class="radio"> Complétion de fonction:</span> essayer de compléter le mot courant en utilisant la liste 
+                    des fonctions du langage courant. 
+                </li>
+                <li>&nbsp;<span class="radio"> Complétion de mot </span>: essayer de compléter le mot courant en utilisant les mots dans le document.</li>
+                <li>&nbsp;<span class="radio"> Complétion de fonction et de mot </span>: essayer de compléter le mot courant en utilisant les mots dans le document et les fonctions du langage.</li>
+                <li>&nbsp;<span class="checkbox">à Partir du .. caractère saisi</span> Entrez le nombre de caractères nécessaires avant que 
+                    <b>Notepad++</b> tente de compléter le mot en cours de frappe. &nbsp;Les valeurs autorisées vont de 1 à 9.
+                </li>
+                </ul>
+            </li>
+            <li> &nbsp;<span class="checkbox"> Paramètres affichés durant la saisie </span> - Si l'option est cochée, quand un 
+                masque est ajouté qui marque le début d'une liste d'arguments de fonction 
+                en cours de saisie, les paramètres de la fonction seront montrés dans une info-bulle.
+            </li>
+						<li>Auto-completion des délimiteurs usuels, en cochant les cses correspondantes ( () [] {} '' "" </> ).
+						 Possibilité d'ajouter jusqu'à trois paires supplémentaitres. 
+						</li>
+            </ul></span>
+        </dt>
+    </dl>
+    <h2><a name="MISC"></a>&nbsp;Divers </h2>
+    <dl>&nbsp;Ces paramètres contrôlent d'autres aspects de <b>Notepad++</b>.
+         <dt> &nbsp;<span style="font-weight: normal;"><a href="DocumentSwitcher.html">Commutateur de Document</a> </span> 
+		<span style="font-weight:normal;"> 
+            <ul>
+                <li> &nbsp;<span class="checkbox">Activer</span> - Pour activer le sélecteur de document. </li>
+                <li> &nbsp;<span class="checkbox">Activer la liste MRU</span> - Gouverne l'ordre des fichiers dans le sélecteur de document.</li>
+            </ul></span>
+        </dt>
+        <dt> &nbsp;<span style="font-weight: normal;">Coloriage automatique</span> 
+		<dt><dd> 
+                Quand cette option est activée, 
+                    toutes les occurrences du mot qui correspond à la sélection active en ce moment à l'écran sera en surbrillance. Vous pouvez contrôler
+                    la couleur en utilisant le <a href="StylerConfigurator.html">Configurateur de coloration syntaxique</a>.
+            <ul>
+                <li> &nbsp;<span class="checkbox">Activer le coloriage automatique</span> - Pour activer la fo,ctionnalité. </li>
+                <li> &nbsp;<span class="checkbox">Respecter la casse</span> - Par défaut, toutes les occurences sont coloriées quelle qu'en soit la capitalisation.
+				On peut ainsi limiter le nombre d'éléments marqués, rendant l'affichage plus clair.</li>
+            </ul>
+        </dd></dt>
+        <dt> &nbsp;Paramétrage des liens cliquables : 
+		<span style="font-weight:normal;"> 
+            <ul>Cette option rend les adresses web cliquables (tous protocoles).
+				 &nbsp;L'adresse s'ouvre alors dans votre navigateur par double clic, 
+                s'il est correctement installé. 
+                <li>&nbsp;<span class="checkbox">Activer</span> - Si elle est activée, les adresses &lt;protocole&gt;:// sont cliquables dès 
+                    qu'ils ont été saisis et que le caret n'est plus dessus. 
+                </li>
+                <li> &nbsp;<span class="checkbox">Pas de soulignement</span> - Si elle est activée, cette option élimine 
+                    le soulignement standard des liens hypertexte. 
+                </li>
+            </ul>
+        </dt>
+        <dt>&nbsp;Auto-détection de statut des fichiers: 
+		<span style="font-weight:normal;"> 
+        <ul>&nbsp;Vérifie automatiquement l'état de chaque fichier ouvert lorsque <b>Notepad++</b> est activé depuis l'arrière-plan.
+            <li>&nbsp;<span class="checkbox">Détection automatique </span>&nbsp;- Vérifier l'état pour permettre la détection.</li>
+            <li>&nbsp;<span class="checkbox">Mise à jour sans alerte</span> - Si un changement dans un fichier est détecté 
+                (modification de contenu), <b>Notepad++</b> va effectuer le rechargement du fichier sans alerte.
+            </li>
+            <li>&nbsp;<span class="checkbox">Aller à la dernière ligne, après mise à jour</span> - Si elle est cochée, lorsqu'un 
+                fichier est rechargé après détection d'une modification externe, il défilera jusqu'à la dernière ligne
+                (utile pour les fichiers log). 
+            </li>
+        </ul></span>
+        </dt>
+        <dt> &nbsp;Surligner les éléments: 
+		<span style="font-weight:normal;"> 
+            <ul> &nbsp;L'élément est 
+                l'unité de base pour souligner les langages XML / HTML. &nbsp;Lorsque le curseur est situé sur une balise ou à l'intérieur d'un élément, 
+                l'entrée élément correspondant sera colorisée. &nbsp;Vous  pouvez changer les couleurs en utilisant le
+                <a href="StylerConfigurator.html#Tags_match_highlighting">Configurateur de coloration syntaxique</a>. 
+                <li>&nbsp;<span class="checkbox"> Activé </span>&nbsp;- Cochez pour activer la mise en évidence des balises. </li>
+                <li>&nbsp;<span class="checkbox"> les attributs des éléments </span>&nbsp;- Si elle est cochée, les attributs d'un élément seront surlignés.</li>
+                <li>&nbsp;<span class="checkbox">Dans les zones de commentaire / php / asp </span>&nbsp;- Si elle est cochée, les balises 
+                    dans un script php / asp seront surlignées.
+                </li>
+            </ul></span>
+        </dt>
+        <dt> <a name="Cloud"></a>Cloud            
+		<span style="font-weight:normal;"> 
+		Sur cet onglet, en fonction des comptes distants dont vous disposez, vous pouvez 
+		sauvegarder votre configuration "dans le nuage" plutôt que sur votre ordinateur. Les media pris en compte sont DropBox, OneDrive et GoogleDrive.
+		</span>
+        <dt> <a name="Sessions"></a>Sessions            
+		<span style="font-weight:normal;"> 
+		<ul>
+                <li> &nbsp;Si une extension est inscrite comme <span class="label">&nbsp;extension pour fichiers session </span>, <b>Notepad++</b> va
+                    essayer d'ouvrir ces fichiers comme fichiers de session au lieu de fichiers normaux. Cela vous permet de simplement
+                    fournir un fichier de session via la ligne de commande ou toute autre méthode d'ouverture d'un fichier afin de charger
+                    une session dans <b>Notepad++</b>. 
+                </li>
+            </ul></span>
+        </dt>
+        <dt><a name="OtherOperations">&nbsp;Autres options</a> 
+		<span style="font-weight:normal;"> 
+            <ul>
+                <li> &nbsp;<span class="checkbox">Activer mise à jour automatique:</span> Si elle est cochée, <b>Notepad++</b>
+                    tentera de trouver sur une mise à jour au démarrage. &nbsp;Vous avez la possibilité de reporter la mise à niveau s'il en trouve une. 
+                </li>
+                <li> &nbsp;<span class="checkbox">Auto-détection de l'encodage:</span> Cochée par défaut, cette case autorise ou non 
+				<b>Notepad++</b> à utiliser des heuristiques de détection de l'encodage des fichiers.
+				Si elle est cochée, <b>Notepad++</b>
+                    tentera de trouver sur une mise à jour au démarrage. &nbsp;Vous avez la possibilité de reporter la mise à niveau s'il en trouve une. 
+                </li>
+                <li> &nbsp;<span class="checkbox">Auto-indentation</span> - Si elle est cochée, l'ajout d'une nouvelle ligne se fera 
+                    avec le même retrait que la précédente.
+                </li>
+                <li> &nbsp;<span class="checkbox">Réduire dans la zone de notifications</span> - Si l'option est cochée, 
+                    la minimisation de <b>Notepad++</b> ajoutera une icône 
+                     à la barre d'état système (zone de notification). En cliquant sur 
+                    cette icône, <b>Notepad++</b> reviendra au premier plan.
+                </li>
+                <li> &nbsp;<span class="checkbox">Afficher uniquement les noms de fichier dans la barre de titre</span> - Si elle est cochée, au lieu du
+                     chemin complet vers le fichier actif, c'est le nom du fichier sans le répertoire qui sera affiché.
+                </li>
+                <li> &nbsp;<span class="checkbox">En SQL, l'antislash est un caractère d'échappement</span> - Puisque les différents 
+				dialectes de SQL ont des interprétations différentes de l'antislash, vous pouvez en décider ici.
+                </li>
+            </ul></span>
+        </dt>
+    </dl>
+</body>
+</html>

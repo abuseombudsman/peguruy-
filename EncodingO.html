@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><!--<base href=""/><base target="_top"/>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="encodage,décodage,encoder,décoder">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Encodage/décodage</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Newlineformat.html">Format Fin de Ligne</a></td><td><a href="Documentproperties.html"><!---->Propri&eacute;t&eacute;s du document</a></td><td>&nbsp;</td>
+</tr></table>
+
+    <h1> &nbsp;Encodage / décodage </h1>
+    <p> &nbsp;Le texte peut être codé de plusieurs façons. &nbsp;La plupartdes fichiers texte sont au format de codage appelé ANSI,
+        permettant le codage compact d'un jeu de 256 caractères. Pour les usages européens ce codage est suffisant. Toutefois, 
+        l'encodage Unicode a été mis au point pour permettre de coder une quantité beaucoup plus importante de caractères, ce qui permet à un seul 
+        fichier de contenir du texte de plusieurs écritures, au prix d'une taille plus importante. <b>Notepad++</b> va essayer
+        de détecter automatiquement le codage utilisé à l'ouverture d'un fichier, mais il vous permet de le changer à l'édition.
+        Pour changer simplement l'encodage de restitution (sans modifier le texte lui-même), sélectionnez l'une des options 
+        <span class="menu_item"> Encodage -&gt; Encoder en...</span>. Pour convertir le texte dans un autre codage,
+        sélectionnez l'une des entrées <span class="menu_item">Encodage -&gt; Convertir en ...</span>. 
+    </p>
+    <p> &nbsp;Il peut arriver qu'un fichier soit enregistré avec un codage que <b>Notepad++</b> n'arrive pas à détecter correctement.
+        Il s'agit d'une limitation technique et elle se produit parce que le fichier résultat ne stocke pas le type d'encodage.
+        Cela n'est plus le cas si le fichier est enregistré avec une mode BOM (Byte Order Mark) indiquant le codage utilisé. 
+    </p>
+    <dl><dt>&nbsp;<b>Notepad++</b> offre les systèmes de codage suivants : 
+        <dt> &nbsp;ANSI 
+            <dd> &nbsp;Codage originel du format Windows, la plus petite taille possible pour le fichier.
+                résultat, mais sujet ç des erreurs dues à l'utilisation de multiples pages de code (jeux de caractères différents).
+				Une appelation plus correcte serait OEM.
+           </dd>
+        </dt>
+        <dt> &nbsp;UTF-8 
+            <dd>Codage Unicode, le plus utilisé sur Internet. Il code le maximum de caractère en caractère sur un 
+                octet, permettant de diminuer la taille du fichier. Toutefois, ce format autorise l'utilisation de caractères codés sur 2, 3 ou 4 octets,
+                Une suite d'octets BOM figurera en en-tête du fichier pour mémoriser le codage utilisé.
+            </dd>
+        </dt>
+        <dt> &nbsp;UTF-8 sans BOM 
+            <dd> &nbsp;Comme UTF-8, mais la BOM n'est pas ajoutée. Economise trois octets, mais rend plus difficile la détection d'encodage. Les anciens serveurs requièrent ce mode.</dd> 
+        <dt>&nbsp;UCS-2LE (Little Endian) 
+            <dd> Tous les caractères&nbsp;sont encodés sur deux octets , les couples d'octets sont au format Little Endian. Un en-tête de 2 octets
+                 est ajouté au fichier.
+            </dd>
+        </dt>
+        <dt>&nbsp;UCS-2BE (Big Endian)
+            <dd>Tous les caractères&nbsp;sont encodés sur deux octets , les couples d'octets sont au format Big Endian. Un en-tête de 2 octets 
+                est ajouté au fichier.
+            </dd>
+        </dt>
+    </dl>
+    <p>&nbsp;En outre, depuis la version 5.6, <b>Notepad++</b> supporte le changement de jeu de caractères utilisé pour afficher le texte au format ANSI,
+        exactement comme vous le faites dans la plupart des navigateurs web. Ces encodages sont disponibles en utilisant les 
+        <span class="menu_item">&nbsp;jeux de caractères </span>&nbsp;ci dessus énumérés dans l'option <span class="menu_item">&nbsp;Encoder en ...</span>
+        Le codage initial de nouveaux documents peut être de n'importe quel type : Unicode, ANSI ou formats pris en charge.
+    </p>
+    <p>Notepad++ déteccte l'encodage d'un document au moyen de techniques d'analyse sophistiquées. Vous pouvez 
+	tojours le changer si le résultat est incorrect. uand une référence à un document est inscrite dans une session, 
+	l'encodage utilisé est sauvegardé. Comme la détection est heuristique, elle peut parfois se tromper; vous pouvez la désactiver 
+	par <span class="checkbox">Auto-détection de l'encodage</span> sur l'onglet Divers des Préfére,ces.
+    </p>
+</body>
+</html>

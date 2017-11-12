@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="ligne,commande">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Ligne de commande</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Plugins.html">Plugins</a></td><td><a href="AideIndex.html">Table des matières</a></td><td>Suivant: <a href="Controlfiles.html">Fichiers de cintr&ocirc;le</a></td>
+</tr></table>
+
+    <h1> &nbsp;Ligne de commande </h1>
+    <p>
+        <table border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" width="100%"><col width="256*">
+            <tbody>
+            <tr>
+                <td valign="top" width="100%" style="background-color:Aquamarine;">
+                    <dl>&nbsp;<b>Notepad++</b>.exe [-alwaysOnTop] [-loadingTime] [-multiInst] [-noplugin] [-ro] [-nosession] [-notabbar] [-n##] [-c] [-x##] [-y##] [-l$$$] [-systemtray] {-r] [<i>fichiers</i>] | [-openSession <i>fichier</i>]</td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+    <dl>&nbsp;<b>Notepad++</b>interprète des paramètres en ligne de commande&nbsp;afin de contrôler son lancement.
+	&nbsp;Les options suivantes sont reconnues (elles sont sensibles à la casse): 
+    
+	<dl>
+	<dt>-alwaysOnTop</dt>
+	<dd>En présence de cette option, Notepad++ s'ouvre au-dessus des autres fenêtres.</dd>
+    <dt> &nbsp;-c 
+        <dd> &nbsp;Commence à éditer en mode colonne.</dd>
+    </dt>
+    <dt> &nbsp;--help 
+        <dd> Affiche cette liste, c'est à dire tous les commutateurs de ligne de commande</dd>
+    </dt>
+    <dt>&nbsp;-l <i><span style="font-weight: normal;">nom </span><span style="font-weight: normal;">court du langage</span></i>
+        <dd>&nbsp;Langue à utiliser pour chaque fichier ouvert. &nbsp;$$$ est une courte chaîne d'identification, dont voici valeurs les autorisés : <br>
+        <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="0" >
+        <tbody>
+        <tr>
+            <td style="background-color:aquamarine;">
+                &nbsp;normal, php, c, cpp, cs, objc, d, java, rc, html, xml, makefile, pascal, lot, ini, nfo,
+                ASP, SQL, VB, javascript, css, perl, python, lua, tex, COBOL, FORTRAN, bash, actionscript, nsis,
+                tcl, Lisp, Scheme, asm, diff, des accessoires, des post-scriptum, Ruby, Smalltalk, VHDL, kix,
+                AutoIt, Gui4Cli, powershell, Caml, ADA, Verilog, matlab, Haskell, l'innovation, cmake, yaml, r, jsp,
+				coffeescript
+            </td>
+        </tr>
+        </tbody>
+        </table>
+        </dd>
+    </dt>
+		<dt>-L&lt;<em>locale</em></dt>
+		<dd>Définit la langue utilisée pour l'IHM de l'istance qui va être ouverte.
+		<i>lodale</i> doit être un LCID reconnu par Notepad++, comme dans -Lru (russe) ou -Les-ar (español argentino).
+		</dd>
+    <dt> &nbsp;-loadingTime 
+        <dd> Affiche le temps de chargement de tous les fichiers si <b>Notepad++</b> démarre avec cette option. Le résultat est affiché dans une boîte de 
+            message, avec une résolution de 0,01s.
+        </dd>
+    </dt>
+    <dt> &nbsp;-multiInst 
+        <dd>&nbsp;Permet de démarrer plus d'une instance de <b>Notepad++</b>. Par défaut, si <b>Notepad++</b> est déjà ouvert, 
+            une nouvelle ouverture se fera sur la même instance. L'option permet de changer ce comportement.
+        </dd>
+    </dt> 
+    <dt> &nbsp;-n &lt;<i><span style="font-weight: normal;">numéro de ligne</span></i>> 
+        <dd> &nbsp;Numéro de la ligne courante, pour tous les fichier ouvert au démarrage. </dd>
+    </dt>
+    <dt> &nbsp;-noplugin 
+        <dd> &nbsp;Permet de ne pas charger les plugins. Si vous soupçonnez un plugin défectueux ou si vous ne souhaitez pas les charger,
+            ajoutez cette option. 
+        </dd>
+    <dt>&nbsp;-nosession 
+        <dd> &nbsp;Ne pas charger la session précédente au démarrage. Ne pas enregistrer la session à la sortie non plus.</dd> 
+    </dt>
+    <dt>&nbsp;-notabbar 
+        <dd> &nbsp;Masquer la barre d'onglets, même si les préférences disent le contraire.</dd>
+    </dt>
+	<dt>-openSession <em>Fichier</em></dt>
+		<dd>Ouvre <em>Fichier</em> en tant que fichier e session, ce qui charge tous les fichiers auquel il réfère.</dd>
+	</dt> 
+	<dt>&nbsp;-r
+		<dd>Interpréte les jokers ? et * comme le ferait DOS, ce qui pemet d'ouvrir plusieurs fichiers simultanément.
+	</dt>
+    <dt> &nbsp;-ro 
+        <dd> &nbsp;Tout fichier ouvert au démarrage le sera en mode Lecture seule.</dd>
+    </dt>
+    <dt> &nbsp;-systemtray
+        <dd>&nbsp;Démarrer <b>Notepad++</b> minimisé dans la barre système, ou zone de notification.</dd>
+    </dt>
+    <dt>-x&lt;<span style="font-weight: normal;"><i>position</i></span> >
+        <dd>&nbsp;Préciser la position horizontale (en pixels) à laquelle <b>Notepad + +</b> fenêtre principale est d'ouvrir.</dd>
+    </dt>
+    <dt>&nbsp;-y &lt;<i><span style="font-weight: normal;">position</span></i>>
+        <dd>&nbsp;Spécifiez la position verticale (en pixels) à laquelle <b>Notepad + +</b> fenêtre principale est d'ouvrir.</dd>
+    </dt>
+    <dt> &nbsp;Fichiers 
+        <dd> &nbsp;Tout le reste sera interprété comme des noms de fichier. &nbsp;mettez 
+            vos noms de fichiers entre guillemets s'ils contiennent des espaces. Les jokers ne sont pas pris en charge.
+        </dd>
+    </dt>
+    </dl>     
+    <p>&nbsp;L'ordre des options n'a pas d'importance. Pour la compatibilité, 
+        <b>Notepad++</b> va d'abord essayer d'identifier la ligne de commande entière comme un nom de fichier, même en l'absence de guilemets.
+       &nbsp;Il n'est toutefois pas recommandé de le&nbsp; faire, 
+        il et toujours conseillé de placer le nom du fichier complet et&nbsp; entre guillemets. 
+    </p>
+	<p>Toutes les options de ligne de commande sont décrites dans la rubrique d'aide specialisée <span class="menu_item">? &rarr; Options de la ligne de commande</span>
+</body>
+</html>

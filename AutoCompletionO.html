@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="KEYWORDS" content="Autocomplétion,Saisie,automatique">
+	<meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+	<title>Saisie semi-automatique</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<base target="_top">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Selecting.html">S&eacute;lection de texte</a></td><td><a href="Editing_Scint.html"><!---->Edition</a></td><td>Suivant: <a href="ColumnModeEditing.html">Edition en mode colonne</a></td>
+</tr></table>
+
+<h1> Saisie semi-automatique </h1>
+<p><b>Notepad++</b> possède des capacités de saisie semi-automatique (auto-complétion), ce qui lui permet de finir un mot que vous
+		tapez en donnant une liste d'options possibles, ou de l'insérer immédiatement si une seule est disponible (fournie
+		par le composant <b>Scintilla</b>). 
+</p>
+<ul>Il existe deux types d'auto-complétion. 
+    <li> Le premier utilise une liste de mots-clé prédéfinis et est connue sous le vocable <b>
+        complétion des fonction</b>. Elle est activée en sélectionnant <span class="menu_item">&nbsp;Édition -&gt; AutoComplétion -&gt; Compétion de Fonction </span> ou
+        automatiquement lorsqu'un certain nombre de caractère est tapé (voir aussi <a href="Preferences.html#Auto-Completion">les Préférences</a>). <br>
+        <img src="./Images/screenshots/autocomp.png">
+    </li>
+    <li> Le second, <b>Complétion de mot</b>, récupère tous les mots du fichier en cours et aide à compléter le mot. 
+        Ceci est activé en sélectionnant
+				<span class="menu_item">&nbsp;Édition -&gt; AutoComplétion </strong>-&gt; Complétion de mot </span>, ou en entrant un
+        numéro de série de la liste (voir <a href="Preferences.html#Auto-Completion">Préférences</a>). 
+        <b>Complétion de mot</b> est le seul type qui peut automatiquement finir un mot sans afficher d'abord une liste d'options.
+    </li>
+		<li>Les deux sources de complétion semi automatique sont disponibles séparément ou ensemble.
+		</li>
+
+</ul>
+<p>	Un sujet connexe (assez approchant) est l'affichage des <b>paramètres des fonctions</b>, ou <b>aide aux appels de fonction</b>.
+		 Il s'agit d'une petite info-bulle qui affiche les paramètres nécessaires (et peut-être quelques détails les concernant)
+		 pour une fonction à laquelle un appel est en cours de frappe.  Il s'agit uniquement d'indications pour la programmation, 
+		 qui ne servent à aucune autre tâche.  L'info-bulle soulignera le paramètre en cours d'édition et les renseignements utiles éventuels sur le paramètre.
+		  Il est purement informatif et n'effectuera aucune correction du texte. 
+		 Pour activer l' info-bulle (si des données existent), sélectionnez 
+		 <span class="menu_item">&nbsp;Édition -&gt; Auto-Complétion -&gt; Info-Bulle des paramètres de la fonction </span>.
+</p>
+<p> La saisie semi-automatique est liée à un langagedéterminé, sauf pour la complétion de mots (voir <a href="Languages.html">langages</a>)
+ et aux fichiers dits API pour chaque langage.  Pour plus de détails sur ces fichiers XML et comment faire les vôtres, consultez
+		<a class="extlink" href="http://sourceforge.net/apps/mediawiki/notepad-plus/index.php%3Ftitle%3DAuto_Completion">NpWiki++</a>. </p>
+</p>
+<p>
+Il est aussi possible de compléter depuis Notepad++ les chemins absolus de répertoires ou fichiers (raccourci par défaut: <span class="shortcut">Ctrl-Alt-Space</span>).
+</p>
+</body>
+</html>

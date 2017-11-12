@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="sélection,texte">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Sélection de texte</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Overtype.html">Mode Refrappe</a></td><td><a href="Editing_Scint.html"><!---->Edition</a></td><td>Suivant: <a href="AutoCompletion.html">Saisie semi-automatique</a></td>
+</tr></table>
+
+    <h1>Sélection de texte</h1>
+    <p>Comme avec n'importe quel éditeur de texte, vous pouvez sélectionner du texte en utilisant la souris ou le clavier. Le texte sélectionné
+        peut être entre autres déplacé vers une autre partie du même document, copié ailleurs dans le même ou dans un autre document, être utilisé
+        pour une recherche de texte, supprimé. 
+    </p>
+    <h2>Comment sélectionner du texte</h2>
+    <p> Lorsque vous utilisez la souris, la façon la plus simple - même s'il y en a d'autres - est le Glisser/déposer, qui consiste à faire
+        glisser la souris en maintenant le bouton gauche (droite en fonction inversée) du point de départ au point où le texte doit être déplacé.  
+        Vous pouvez également double-cliquer sur un mot pour le sélectionner, ou triple-cliquer sur une ligne pour la sélectionner. Le même effet 
+        est obtenu par un simple-clic sur la marge de numéro de ligne, lors de l'affichage. Vous pouvez étendre une sélection en gardant le bouton enfoncé 
+        jusqu'au niveau du point d'insertion. 
+    </p>
+    <p> Lorsque vous utilisez le clavier, la procédure prévue est d'utiliser les touches de navigation en conjonction avec la touche
+        <span class="Shortcut">Maj</span>. Ces <a href="ShortcutMapper.html">Raccourcis Clavier...</a> peuvent être modifiés à tout moment en utilisant
+        l'outil <a href="ShortcutMapper.html">Raccourcis Clavier...</a>.
+    </p>
+<p>En outre, il est possible de définir une sélection en  deux étapes en cliquant sur
+ <span class="menu_item">Edit &rarr; Begin/End Select</span> au début et à la fin de la plage de texte désirée. Cette technique est particulièrement efficace 
+dans ke cadre de recherche et subsitution de texte.
+</p><p>Par ailleurs, ctrl-double cliquer un mot se trouvant entr deux délimiteurs prédéfinis
+ sélectionne tout entre ces délimiteurs.. Par défaut, '(' et ')' sont utilisés, mais cela est configurable.
+ Si les deux élimiteurs sont des guillemets, les guillements protégés (\") ne sont pas pris en compte.
+</p>
+    <h2>Sélection Contigüe</h2>
+    <p> Les procédures ci-dessus sont connues pour définir une sélection <i>au fil de l'eau,</i> qui englobe une plage contiguë de texte. Par 
+        l'utilisation de la commande SCI_SWAPMAINANCHORCARET de « <b>Scintilla</b> » du mappeur de raccourci, vous pouvez choisir si le curseur 
+        commence ou se termine dans la sélection. 
+    </p>
+    <p> Toutefois, <b>Notepad++</b> sait aussi sélectionner sur un rectangle de lignes contiguës. Pour sélectionner un rectangle, utiliser les
+        méthodes ci-dessus, tout en maintenant la touche <span class="Shortcut">Alt</span> enfoncée. Par exemple, la méthode de base avec la souris
+        est de <span class="Shortcut">Alt-cliquer</span> sur le point de départ et <b>Alt-déplacez la souris vers le point final</b>, et ainsi de suite.
+        Les versions <span class="shortcut">Alt</span> des raccourcis clavier peuvent être changées.
+    </p>
+	<p><span class="menu_item">Edition -> Mode Colonne...</span> affiche une petite boîte de dialogue afin de
+	vous rappeler ces racourcis, puisqu'autrement ils n'apparaissent dans aucun menu.</p>
+    <p> Il est possible de combiner une sélection de flux et de sélection d'aire rectangulaire, en utilisant le clavier. Ceci est probablement moins 
+        utile, mais n'est pas un bogue.
+    </p>
+    <p> <span class="menu_item"> Edition -&gt; Ligne -&gt; Déplacer la ligne courante vers (le haut /le bas) </span> commande également le déplacement
+        de la zone sélectionnée, si elle n'est pas rectangulaire.  Cette capacité est perdue lorsque plusieurs sélections sont faites - voir ci-dessous.
+    </p>
+    <h2>Sélections multiples de flux</h2>
+    <p> Si une zone de flux est sélectionnée, il est possible d'ajouter une autre, la zone disjointe étant sélectionnable par Ctrl-clic sur son point 
+        de départ et en déplaçant la souris vers le point final. Plusieurs sélections peuvent être ajoutées de cette façon. Toutefois, cette capacité
+        ne s'étend pas aux sélections rectangulaires. Une sélection rectangulaire peut encore s'accrocher à un flux d'une sélection multiple.
+        La commande SCI_ROTATESELECTION de « <b>Scintilla</b> » permet de parcourir les sélections, dans l'ordre où elles ont été définies. 
+    </p>
+    <p> Lors de la copie ou par découpe de sélection multiple, le texte est enregistré dans l'ordre où les sélections apparaissent, indépendamment
+        de l'ordre où elles ont été faites. 
+    </p>
+</body>
+</html>

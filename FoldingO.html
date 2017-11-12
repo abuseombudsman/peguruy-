@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><!--<base href=""/><base target="_top"/>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="indentation,pliage,dépliage">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Pliage/dépliage de texte</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Zooming.html">Zoom</a></td><td><a href="Display.html"><!---->Affichage</a></td><td>Suivant: <a href="Hidinglines.html">Cacher des lignes</a></td>
+</tr></table>
+
+    <h1>&nbsp;Pliage / dépliage de texte</h1>
+    <p> &nbsp;<b>Notepad++</b> prend en charge le <b>pliage</b> / <b>dépliage</b> pour vos documents texte. Cela signifie que certaines lignes 
+        de votre texte peuvent être cachées sous la forme de marques dans la marge. Cela fonctionne bien pour des langages structurés 
+        tels que C++ ou XML. &nbsp;Des blocs de texte sont hiérarchiquement liés entre eux et une fois repliés (on dit ausi escamotés),
+        seule la première ligne en demeure visible - s'ils ne sont pas à l'intérieur d'un bloc parent replié. Ce dispositif est efficace pour jeter un rapide coup d'œil à votre document et ne montrer
+        que la partie intéressante du document. Déplier le texte l'affiche de nouveau en entier. 
+    </p>
+    <p> &nbsp;Vous pouvez reconnaître le texte qui peut être plié en regardant la marge sur la gauche. Cette marge affiche des icônes
+         et des lignes pour indiquer la structure du texte (l'apparence dans la marge peut se changer, voir
+        <a href="StylerConfigurator.html#Fold">Configurateur de coloration syntaxique</a> et <a href="Preferences.html#Edit_Components">Préférences</a> ).
+        L'analyseur lexical courant détermine la structure (voir <a href="Languages.html">langages</a> ). &nbsp;Par défaut, les blocs sont 
+        représentés par des carrés et des lignes pour indiquer la structure des plis. Un nœud portant un signe moins (
+        <img style="width: 12px; height: 16px;" alt="" src="./Images/fold_min.jpg">) indique que le texte peut être replié. Inversement, un nœud
+        avec un signe plus (<img style="width: 12px; height: 16px;" alt="" src="./Images/fold_plus.jpg">) indique que le texte peut être déplié.
+        Un texte escamoté est de plus indiqué par une ligne horizontale au dessus de la première ligne du texte <b>replié</b>, qui restera toujours 
+        visible. &nbsp;Les lignes en marge délimitent les lignes de texte repliables. &nbsp;Les lignes verticales (
+        <img style="width: 8px; height: 14px;" alt="" src="./Images/fold_line.jpg"> &nbsp;) qui indiquent les groupes de lignes escamotables ensemble
+        se terminent par une petite ligne horizontale ( <img style="width: 9px; height: 15px;" alt="" src="./Images/fold_bar.jpg">) ou par une boîte.
+    </p> 
+    <ul>Il ya plusieurs façons de <span style="font-weight: bold;">plier</span> du texte.
+        <li> &nbsp;Le principal moyen est de cliquer avec le <span class="shortcut">bouton gauche de la souris</span> sur une case avec un signe moins.
+            Cela replie tout le texte qui se trouve dans ce groupe.
+        </li>
+        <li>Même chose avec appui sur la touche <span class="shortcut">Ctrl</span> pour replier le groupe, mais aussi tous les sous-groupes à 
+            l'intérieur. Cela signifie concrètement que lorsque vous ouvrirez ce groupe, tous les sous-groupes seront encore repliés.
+        </li>
+        <li>En utilisant le menu: &nbsp;<span class="menu_item"> Affichage -&gt; Replier tous </span>&nbsp;repliera chaque groupe dans le document,
+            minimisant le plus de texte possible. <span class="menu_item">&nbsp;Affichage -&gt;  Replier le niveau actuel&nbsp;</span> 
+            n'escamote que le groupe actuel (le groupe qui contient la ligne courante, n'importe où dans le groupe).
+            Ceci ne repliera pas les sous-groupes. <span class="menu_item">&nbsp;Affichage -&gt;     Replier le niveau ...</span> va escamoter
+            le niveau sélectionné (de 1 à 8). Cela replie les groupes à un niveau particulier, mais pas tout les sous-groupes. Vous pouvez utiliser cette option
+            pour afficher votre texte avec un « niveau de détail » donné.
+        </li>
+    </ul>
+    <ul>Pour <span style="font-weight: bold;">déplier</span> le texte plié, appliquez l'une des actions suivantes:
+        <li>Cliquez sur la case avec le signe plus dans la marge des plis, affichant le contenu de ce groupe. </li>
+        <li>Cliquez sur la case avec le signe plus avec la touche <span class="shortcut">Maj</span> ou <span class="shortcut">Ctrl</span> enfoncée.
+            Cela permettra de déplier le groupe et les sous-groupes plié.
+        </li>
+        <li>En utilisant le menu: &nbsp;<span class="menu_item"> Affichage -&gt; Déplier Tous&nbsp;</span> dépliera chaque (sous-)groupe dans le
+            document, ce qui rend visible le maximum de texte. <span class="menu_item">&nbsp;Affichage -&gt;  Déplier niveau actuel </span>
+            &nbsp;ne développera que le groupe actuel (le groupe qui contient la ligne courante). Cela ne dépliera pas tous les sous-groupes.
+            <span class="menu_item">&nbsp;Affichage -&gt; Déplier niveau ...</span> rendra visible tout groupe d'un certain niveau
+			ainsi que leurs ancètres. 
+        </li>
+    </ul>
+    <p>&nbsp;Notez également que si un changement intervient dans le texte replié, il se déploie automatiquement pour afficher le texte. </p>
+	<p>Le bloc escamotable contenant la ligne active est mis en relief dans la marge.
+Vous pouvez changer la coueur spécifique utilisée à l'aide du Configurateur de Coloration Syntaxique en y modifiant
+ le style Global style, Fold active.
+</p>
+<p>Poir finir, signalons que les sessions mémorisent les points d'escamotage et leur état. Cela permet de s'arrêter de travailler sur un document 
+avec des plis, et de le retrouver dans le même état en le rouvrant.
+</body>
+</html>

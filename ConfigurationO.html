@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=utf-8" http-equiv="content-type"><title>Closing</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Pr�c�dent: <a href="Controlfiles.html">Fichiers de cintr&ocirc;le</a></td><td><a href="AideIndex.html">Table des mati�res</a></td><td>Suivant: <a href="ShellExtension.html">Extension syst&egrave;me</a></td>
+</tr></table>
+
+<h1>Fichiers de conficguration 
+</h1><p>
+La cinfiguration de Notepad++ se fait exclusivement au moyen de fichiers XML. Ce choix technique assure l'indépendence de Notepad++ 
+de la base de registre de Windows® et évite les problèmes d'enncodage quand on lit ou écrit du texte comportant des
+caractères  non ASCII, comme pour les éléments textuels de l'interface ou l'historique 
+des recherches.
+</p><p>Ces fichiers se trouvent:
+<ul><li>Soit dans le répertoire d'instalation folder, s'il contient aussi le fichier <tt>doLocalConf.xml</tt> et si le stockage est sur place.
+</li><li>Soit dans %APPDATA%\Notepad++ si <tt>doLocalConf.xml</tt> n'est pas présent et si le stockage est sur place.
+</li><li>Soit "dans le nuage", si vous avez accès à de tels comptes à distance et si vous avez 
+choisi cette option sur <a href="Preferences.html#Cloud">cloud usage</a>
+</li></ul>
+</p><p>
+La liste complète des fichiers de configuration, dont beaucoup sont optionnels, se trouve sur <a class="extlink" href="http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Configuration_File_Editing">Configuration files (en anglais)</a>.
+Les plus importants sont:
+remplacements, politique de sauvegarde...<dl><dt>config.xml</dt><dd> divers paramètres de l'interface utilisateur, positions des fenêtres des plugins, historique des recherche/remplacements, politique de sauvegarde...
+</dd><dt>langs.xml</dt><dd> caractéristiques - essentiellement les listes de mots clef - des <a href="Built-in Languages.html">langages natifs</a>
+</dd><dt>nativeLang.xml</dt><dd> traductions actuelles de presque tous les éléments textuels de l'interface
+</dd><dt>stylers.xml</dt><dd> couleurs et polices pour tous les styles des langages natifs, et quelques aspects généraux tels que les numéros de ligne.
+</dd></dl>
+</p></body></html>

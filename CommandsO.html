@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="Commande,run,lancer">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Commandes</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--<base href="./"/><base target="_top"/> -->
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="Macros.html">Macros</a></td><td><a href="AideIndex.html">Table des matières</a></td><td>Suivant: <a href="RunShortcuts.html">Raccourcis pour le menu Ex&eacute;cuter</a></td>
+</tr></table>
+
+    <h1>&nbsp;Exécuter... </h1>
+        <p> &nbsp;Le menu <span class="menu_item">Exécuter...</span> vous permet d'exécuter des applications à partir de 
+            <b>Notepad++</b>, par exemple pour ouvrir votre fichier en cours dans un navigateur 
+            ou de le compiler avec un compilateur externe. Vous pouvez passer rune ligne de commande avec 
+            les évenuels paramètres du programme pour action sur l'état actuel de votre document. 
+            <br><img src="Images/Screenshots/run.png"/>
+    </p>
+    <h3> &nbsp;Pour exécuter une nouvelle commande: </h3>
+    <p><dl><span class="menu_item"><span style="background-color: #D4D0C8">&nbsp;Exécution </span>-&gt; Exécuter... </span> 
+        &nbsp;Une boîte de dialogue apparaîtra et vous demandera le chemin d'accès au programme et, éventuellement,
+        des paramètres de ligne de commande. &nbsp;Vous pouvez utiliser <span class="button">Parcourir</span> pour rechercher votre programme.
+        La liste déroulante fournit les dernières saisiez de programmes à exécuter. Les arguments de la ligne de commande peuvent 
+        utiliser les paramètres du document en cours, et sont toujours enfermés dans $(...), avec 
+        comme valeurs possibles :
+        <dt>&nbsp;FULL_CURRENT_PATH 
+            <dd> &nbsp;le chemin d'accès complet au document actif. <dt> &nbsp;CURRENT_DIRECTORY <dd> &nbsp;Le répertoire du document actuel réside en <dt> &nbsp;FILE_NAME <dd> &nbsp;Le nom de fichier du document, sans le répertoire. <dt> &nbsp;NAME_PART <dd> &nbsp;Le nom du fichier sans l'extension. <dt> &nbsp;EXT_PART <dd> &nbsp;L'extension du présent document. <dt> &nbsp;NPP_DIRECTORY <dd> &nbsp;Le répertoire qui contient l'instance de 
+                <b>Notepad++</b>.exe en cours d'exécution. 
+            </dd>
+        </dt>
+        <dt>&nbsp;CURRENT_WORD 
+            <dd> &nbsp;Le texte actuellement sélectionné dans le document.</dd> 
+        </dt>
+        <dt>&nbsp;CURRENT_LINE 
+            <dd>&nbsp;Le numéro de ligne courant qui est sélectionné dans le document (la première ligne a le numéro 0).</dd> 
+        </dt>
+        <dt>&nbsp;<a name="Current_column"></a>CURRENT_COLUMN 
+            <dd>&nbsp;La colonne actuelle du curseur (la première colonne a le numéro 0).</dd>
+        </dt>
+    </dl>
+    <p> &nbsp;Par exemple, 
+        <table border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" width="100%">
+            <col width="256*"/>
+            <tbody style="font-family: monospace;">
+                <tr>
+                    <td valign="top" width="100%">
+                        &nbsp;<span style="background-color:Aquamarine;"><strong>&quot;$ (NPP_DIRECTORY) \ <b>Notepad + +</b>. Exe&quot; multiInst-&quot;$ (FULL_CURRENT_PATH)&quot;</strong></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;ouvrira une nouvelle instance de <b>Notepad++</b> avec le fichier en cours.
+        &nbsp;N'oubliez pas de mettre des guillemets autour des chemins au cas où  
+        les paramètres contiennent des espaces&nbsp;(pour le
+        <b>Notepad++</b> consultez les options de <a href="CommandLine.Html">ligne de commande</a>).
+    </p> 
+    <h3> &nbsp;Pour exécuter une commande existante: </h3>
+    <p> &nbsp;Dans le menu&nbsp; <span class="menu_item">&nbsp;Exécution </span>&nbsp;La 
+        liste de toutes les commandes est disponible, sans oublier celles que vous mémorisez. 
+        <br><img style="width: 276px; height: 188px;" alt="" src="./Images/Screenshots/save_shortcut.png">
+    <h3> &nbsp;Pour enregistrer une commande: </h3>
+    <p> &nbsp;Dans le menu&nbsp; <span class="menu_item">
+        <span style="background-color: #D4D0C8">&nbsp;Exécution </span>-&gt; Exécuter ...,</span> tapez la commande&nbsp; 
+        à enregistre puis&nbsp; appuyez sur <span class="button">Enregistrer ....</span> 
+        &nbsp;Une boîte de dialogue apparaîtra et vous demandera un nom pour la commande, ainsi que la combinaison de touches associée.
+    </p>
+	<h3>Pour modifier ou supprimer une commande</h3>
+	<p>Le &nbsp;<a href="Shortcut Mapper.html">Gestionnaire de Raccourcis</a> affiche 
+	toutes les commandes disponibles de manière uniforme; vous pouvez par conséquent 
+modifier tout raccourci existant, y compris ceux des commandes de <span class="menu_item">Exécuter</span>.
+ On accède aussi à cette procédure par 
+<span class="menu_item">Exécuter -&gt; Modifier un raccourci / Supprimer une commande</span>.
+Comme le nom l'indique, ceci ne couvre pas la modification du texte même de la commande - vous devez pour cela 
+éditer <tt>shortcuts.xml</tt>.
+
+</body>
+</html>

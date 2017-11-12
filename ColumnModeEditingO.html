@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KEYWORDS" content="Mode,Colonne">
+    <meta name="AUTHOR" content="lesueur.jacques@gmail.com">
+    <title>Mode Colonne</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<table class="navbar">
+<tr><td>Précédent: <a href="AutoCompletion.html">Saisie semi-automatique</a></td><td><a href="Editing_Scint.html"><!---->Edition</a></td><td>Suivant: <a href="Commenting.html">Commentaires</a></td>
+</tr></table>
+
+    <h1>Mode Colonne</h1>
+    <h2>Modification des zones rectangulaires</h2>
+    <p> Une autre façon d'éditer un fichier est de l'éditer en mode colonne. Cela signifie que le texte peut être sélectionné
+        par colonnes, plutôt que par lignes (« édition verticale »).  Le support de l'édition en colonne se fait via <b>Scintilla</b>,
+        mais avec quelques suppléments de <b>Notepad++</b>. Pour lancer le mode colonne pour la sélection, appuyez sur la
+        touche <span class="shortcut">Alt</span> (par défaut) lors de la sélection de texte (en utilisant 
+        <span class="shortcut">les touches de navigation</span> ou <span class="shortcut">la souris</span>), en déplaçant le
+        curseur vers le bas ou vers le haut selon les besoins. Cela fonctionne mieux si une police non-proportionnelle (exemple : <b>Courrier New</b>)
+        est utilisée, car chaque caractère sera visuellement aligné sur celui de la même colonne au dessus et
+        en dessous (voir <a href="StylerConfigurator.html">Configurateur de coloration Syntaxique</a> pour plus d'informations).
+    </p>
+    <p> Lorsque le texte est sélectionné dans ce mode appelé rectangulaire, la saisie au clavier changera chaque colonne
+        de caractères sélectionné, y insérant le caractère saisi, ou bien insérera une nouvelle colonne. Utilisez la touche <span class="shortcut">ESC</span> pour
+        sortir de ce mode de saisie spécial.  Pour reculer d'une colonne, utilisez les 
+        <span class="menu_item">&nbsp;options-&gt; Annuler</span> fonction <span class="menu_item">Edit</span>, et non
+         la <span class="shortcut">touche</span> Retour arrière.
+    </p>
+    <table>
+        <tr>
+            <td align="center"> Avant de taper &quot;faire&quot; </td>
+            <td align="center"> Après avoir tapé &quot;faire&quot;</td>
+        </tr>
+        <tr>
+            <td align="center"><img src="./Images/Screenshots/col_edit_before.png"></td>
+            <td align="center"><img src="./Images/Screenshots/col_edit_after.png"></td>
+        </tr>
+    </table>
+	<p>La commande <span class="menu_item">Edit -&gt; Mode Colonne....</span> affiche un message pour rappeler 
+l'existence de ce mode et les raccourcis clavier par défaut. De fait, ils n'apparaissent dans aucun autre menu.</p>
+    <h2> L'éditeur de colonnes </h2>
+    <p> La <span style="font-weight: bold;">boîte de dialogue Editeur de colonne</span> est conçue pour
+        rendre le travail plus facile avec des colonnes. Il peut être ouvert en sélectionnant 
+        <span class="menu_item">&nbsp;Édition -&gt; Édition en mode colonnes...</span>
+    </p>
+    
+    <p><img src="./Images/Screenshots/column_editor.png" style="width: 341px; height: 357px;"></p>      
+    <ul>Il existe deux types d'insertion pris en charge par l'éditeur en mode colonne, le texte normal ou des séquences de nombres.                                           
+        <li> En sélectionnant <span class="radio">insertion de texte</span>, il insére sur chaque ligne le texte saisi, à la occolonne du curseur, de la ligne courante jusqu'à la fin du document.</li>                                      
+        <li> L' <span class="radio">insertion de nombres</span> va de même insérer sur chaque ligne une valeur numérique, selon les paramètres fournis: 
+             <ul>                         
+                <li> Le <span class="label">nombre initial</span> est le premier à insérer. </li>
+                <li> <span class="label"> Le pas </span>&nbsp;: valeur dont on augmente la précédente avant la prochaine insertion.
+                <li> Si les <span class="checkbox">Compléter par des zéros</span> est cochée, les valeurs les plus petites seront complétées avec des
+                    zéros pour les rendre de même longueur que les plus grandes. 
+                </li>          
+                <li> Enfin, vous pouvez choisir dans quelle base les nombres seront générés, par défaut "décimal" est utilisé (base 10).</li>   
+            </ul>                                  
+        </li>                                      
+    </ul>                                          
+</body>                                        
+</html>                                        
+                                               
